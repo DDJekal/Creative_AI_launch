@@ -1,0 +1,89 @@
+# DALL-E PROMPT - Multi-Prompt-System
+# Layout: skizze6_card
+# Timestamp: 20250815_153935
+# Length: 4574 characters
+# Compatible: No
+
+— CANVAS STRUCTURE: Vertikales Stack-Layout —
+Canvas: 1080x1080px, Motiv zentriert, Textzonen darunter gestaffelt mit CTA rechts unten
+**LAYOUT-ORIENTIERUNG: Links Textstack, rechts Motiv mit Kreis - rein verbale Orientierung**
+• Layout-Konturen: sanft abgerundete Ecken für ein freundliches, modernes Design
+• Container-Form: abgerundete, moderne Text-Container
+• Rahmen-Stil: weiche Schatten ohne sichtbare Rahmen
+• Ecken-Rundung: mittlere, ausgewogene Rundung (16px)
+• Akzent-Stil: moderne, minimalistische Akzente
+• Layout-Style: Abgerundet & Modern - sanft abgerundete Ecken für ein freundliches, modernes Design
+• Layout-Orientierung: Links Textstack, rechts Motiv mit Kreis
+• Textur-Stil: sanfte Farbverläufe und Übergänge
+• Hintergrund: subtile, dezente Muster
+• LOGO_AREA (40,40 to 200,120): logo in professional dark background
+  → Logo-Zone oben links
+• MOTIV_AREA (0,140 to 1080,460): motiv
+  → Hauptmotiv (einheitlich), reicht visuell über 2 Zonen
+• HEADLINE_BLOCK (40,480 to 1040,560): headline in professional light background
+  → Headline mittig über gesamter Breite
+• SUBLINE_BLOCK (40,580 to 1040,660): subline in professional dark background
+  → Subline mittig unter der Headline
+• STELLENTITEL_BLOCK (600,700 to 1040,780): stellentitel in professional light background
+  → Stellentitel rechts unterhalb Subline
+• BENEFITS_BLOCK (40,700 to 580,960): benefits in professional dark background
+  → Benefits-Liste links unten
+• CTA_BLOCK (880,960 to 1080,1080): cta in highlighted accent area
+  → Call-To-Action Button unten rechts
+
+— TEXT-LAYOUT-BEREICHE —
+**LAYOUT-ANWEISUNG: Alle definierten Bereiche müssen als sichtbare Farbflächen im Bild erscheinen**
+**KRITISCH: Text-BEREICHE als deutlich abgegrenzte Layout-Zonen - KEINE Unterbrechungen, KEINE überlappenden Texte**
+**Die folgenden Bereiche sollen als kompakte, zusammenhängende Flächen in den definierten Layout-Bereichen erscheinen:**
+• HEADLINE-BEREICH in headline_block: TEXT-ZONE
+  → Inhalt: ""Pflegekraft (m/w/d) München - Mit Innovation d..."
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, zentriert
+  → Text wird direkt im Bild gerendert
+• SUBLINE-BEREICH in subline_block: TEXT-ZONE
+  → Inhalt: "Lass uns gemeinsam wachsen"
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, zentriert
+  → Text wird direkt im Bild gerendert
+• STELLENTITEL-BEREICH in stellentitel_block: TEXT-ZONE
+  → Inhalt: "Pflegekraft (m/w/d)"
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, zentriert
+  → Text wird direkt im Bild gerendert
+• LOGO-BEREICH in logo_area: TEXT-ZONE
+  → Inhalt: "[FIRMENLOGO]"
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, zentriert
+  → Text wird direkt im Bild gerendert
+• Benefits-BEREICH in benefits_block: TEXT-ZONE
+  → Inhalt: 3 Bullet-Points, Text: Flexible Arbeitszeiten, Attraktive Vergütung, Fortbildungsmöglichkeiten
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, gleichmäßiger Abstand, gut lesbar
+  → Text wird direkt im Bild gerendert
+• STANDORT-BEREICH: TEXT-ZONE mit Pin-Symbol und Akzentfarbe #F44336
+  → Standort-Pin-Symbol (📍) als visuelles Element
+  → Akzentfarbe #F44336 für Standort-Bereich verwenden
+  → Text wird direkt im Bild gerendert
+• CTA-BUTTON: TEXT-ZONE in Akzentfarbe #F44336
+  → Professioneller Button-Stil mit abgerundeten Ecken
+  → Text wird direkt im Bild gerendert
+
+**TEXT-UMSETZUNG: Alle Texte werden direkt im Bild gerendert**
+
+— MOTIV BESCHREIBUNG —
+moving encounter between caring healthcare professional and thankful patient, tender hand holding, heartfelt conversation, warm lighting design, artistic shallow depth of field, emotionally powerfu...
+Beruf: Wir suchen eine engagierte Pflegekraf...
+Darstellung: Professionell
+Beleuchtung: Natürlich
+Komposition: Medium Shot
+Stimmung: Professionell
+
+— QUALITÄTS-ANFORDERUNGEN —
+• Bildqualität: Hochauflösend, professionelle Fotografie
+• Authentizität: Echte Arbeitsplatz-Szenarien, natürliche Gesichtsausdrücke
+• Corporate Standard: Professionelle Kampagne-Qualität
+• Corporate Design: Hauptfarbe dunkles Grau (#212121), Sekundärfarbe helles Rot (#FFEBEE)
+• Akzentfarbe: helles Rot (#F44336) für CTA-Buttons, Highlights und wichtige Elemente
+• Farbharmonie: Professionelle Unternehmensfarben durchgängig in Layout und Design integriert
+
+— NEGATIVE PROMPTS (VERMEIDEN) —
+• KEINE unscharfen oder niedrigauflösenden Elemente
+• KEINE generischen Stock-Foto Erscheinung
+• KEINE verzerrten Gesichter oder unnatürliche Proportionen
+• Alle Texte werden direkt im Bild gerendert
+• Professionelle, gut lesbare Schrift verwenden

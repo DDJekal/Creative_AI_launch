@@ -1,0 +1,37 @@
+{
+  "timestamp": "20250815_151949",
+  "layout_id": "skizze9_magazine",
+  "layout_name": "Magazin-Layout",
+  "processing_stages": {
+    "input_processed": true,
+    "layout_integrated": true,
+    "prompts_finalized": true
+  },
+  "text_placements_count": 5,
+  "adaptive_adjustments_count": 0,
+  "layout_metrics": {
+    "layout_complexity": "medium",
+    "zones_count": 6,
+    "text_elements_count": 2,
+    "benefits_count": 3,
+    "total_content_length": 137,
+    "ci_colors_count": 5,
+    "layout_efficiency": "medium"
+  },
+  "prompts": {
+    "midjourney": {
+      "length": 2124,
+      "preview": "Professionelle healthcare worker in modernem hospital, freundlich lächelnd, Stethoskop um den Hals, ..."
+    },
+    "dalle": {
+      "length": 4289,
+      "compatible": false,
+      "preview": "— CANVAS STRUCTURE: Magazin-Layout —\nCanvas: 1080x1080px, Oben visuelles Motiv, darunter strukturier..."
+    },
+    "cinematic": {
+      "length": 4085,
+      "transformation_type": "cinematic",
+      "preview": "Ein professionelles Recruiting-Creative für Social Media in höchster Fotografie-Qualität mit folgend..."
+    }
+  }
+}

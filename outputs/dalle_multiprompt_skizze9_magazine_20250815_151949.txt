@@ -1,0 +1,87 @@
+# DALL-E PROMPT - Multi-Prompt-System
+# Layout: skizze9_magazine
+# Timestamp: 20250815_151949
+# Length: 4289 characters
+# Compatible: No
+
+— CANVAS STRUCTURE: Magazin-Layout —
+Canvas: 1080x1080px, Oben visuelles Motiv, darunter strukturierte Text- und CTA-Blöcke im Magazin-Stil
+**LAYOUT-ORIENTIERUNG: Links Textstack, rechts Motiv mit Kreis - rein verbale Orientierung**
+• Layout-Konturen: sanft abgerundete Ecken für ein freundliches, modernes Design
+• Container-Form: abgerundete, moderne Text-Container
+• Rahmen-Stil: weiche Schatten ohne sichtbare Rahmen
+• Ecken-Rundung: mittlere, ausgewogene Rundung (16px)
+• Akzent-Stil: moderne, minimalistische Akzente
+• Layout-Style: Abgerundet & Modern - sanft abgerundete Ecken für ein freundliches, modernes Design
+• Layout-Orientierung: Links Textstack, rechts Motiv mit Kreis
+• Textur-Stil: sanfte Farbverläufe und Übergänge
+• Hintergrund: subtile, dezente Muster
+• LOGO_AREA (880,40 to 1040,120): logo in #DDDDDD
+  → Logo-Zone oben rechts
+• MOTIV_AREA (0,0 to 1080,520): motiv
+  → Visuelles Motiv mit Pflegekraft
+• HEADLINE_BLOCK (40,540 to 680,600): headline in professional light background
+  → Hauptheadline unterhalb des Motivs
+• CTA_BLOCK (720,540 to 1080,620): cta in highlighted accent area
+  → Call-To-Action rechts neben der Headline
+• BENEFITS_BLOCK (40,620 to 1040,780): benefits in professional light background
+  → Benefit-Zone mit 3 Punkten
+• STELLENTITEL_BLOCK (40,800 to 800,880): stellentitel in professional light background
+  → Stellentitel zentriert oder linksbündig
+
+— TEXT-LAYOUT-BEREICHE —
+**LAYOUT-ANWEISUNG: Alle definierten Bereiche müssen als sichtbare Farbflächen im Bild erscheinen**
+**KRITISCH: Text-BEREICHE als deutlich abgegrenzte Layout-Zonen - KEINE Unterbrechungen, KEINE überlappenden Texte**
+**Die folgenden Bereiche sollen als kompakte, zusammenhängende Flächen in den definierten Layout-Bereichen erscheinen:**
+• HEADLINE-BEREICH in headline_block: TEXT-ZONE
+  → Inhalt: "Werden Sie Teil unseres Teams!"
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, zentriert
+  → Text wird direkt im Bild gerendert
+• STELLENTITEL-BEREICH in stellentitel_block: TEXT-ZONE
+  → Inhalt: "Pflegekraft (m/w/d)"
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, zentriert
+  → Text wird direkt im Bild gerendert
+• LOGO-BEREICH in logo_area: TEXT-ZONE
+  → Inhalt: "[FIRMENLOGO]"
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, zentriert
+  → Text wird direkt im Bild gerendert
+• Benefits-BEREICH in benefits_block: TEXT-ZONE
+  → Inhalt: 3 Bullet-Points, Text: Flexible Arbeitszeiten, Attraktive Vergütung, Fortbildungsmöglichkeiten
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, gleichmäßiger Abstand, gut lesbar
+  → Text wird direkt im Bild gerendert
+• CTA-BEREICH in cta_block: TEXT-ZONE
+  → Inhalt: "Jetzt bewerben!"
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, zentriert
+  → Text wird direkt im Bild gerendert
+• STANDORT-BEREICH: TEXT-ZONE mit Pin-Symbol und Akzentfarbe #9C27B0
+  → Standort-Pin-Symbol (📍) als visuelles Element
+  → Akzentfarbe #9C27B0 für Standort-Bereich verwenden
+  → Text wird direkt im Bild gerendert
+• CTA-BUTTON: TEXT-ZONE in Akzentfarbe #9C27B0
+  → Professioneller Button-Stil mit abgerundeten Ecken
+  → Text wird direkt im Bild gerendert
+
+**TEXT-UMSETZUNG: Alle Texte werden direkt im Bild gerendert**
+
+— MOTIV BESCHREIBUNG —
+Professionelle Pflegekraft in modernem Krankenhaus, freundlich lächelnd, Stethoskop um den Hals
+Beruf: Wir suchen eine engagierte Pflegekraf...
+Darstellung: Professionell
+Beleuchtung: Natürlich
+Komposition: Medium Shot
+Stimmung: Professionell
+
+— QUALITÄTS-ANFORDERUNGEN —
+• Bildqualität: Hochauflösend, professionelle Fotografie
+• Authentizität: Echte Arbeitsplatz-Szenarien, natürliche Gesichtsausdrücke
+• Corporate Standard: Professionelle Kampagne-Qualität
+• Corporate Design: Hauptfarbe lebendiges Grün (#388E3C), Sekundärfarbe helles Blau (#E1F5FE)
+• Akzentfarbe: kräftiges Blau (#9C27B0) für CTA-Buttons, Highlights und wichtige Elemente
+• Farbharmonie: Professionelle Unternehmensfarben durchgängig in Layout und Design integriert
+
+— NEGATIVE PROMPTS (VERMEIDEN) —
+• KEINE unscharfen oder niedrigauflösenden Elemente
+• KEINE generischen Stock-Foto Erscheinung
+• KEINE verzerrten Gesichter oder unnatürliche Proportionen
+• Alle Texte werden direkt im Bild gerendert
+• Professionelle, gut lesbare Schrift verwenden

@@ -1,0 +1,2339 @@
+skizze1_vertical_split:
+  name: Vertikale Teilung
+  description: Klassische 50/50 Aufteilung - Text links, Motiv rechts
+  canvas_size: 1080x1080
+  layout_type: two_column_vertical_split
+  complexity: simple
+  zones:
+    # STANDORT-BLOCK oben links (NEU)
+    standort_block:
+      position: 40-340px width, 40-120px height
+      background_color: '{accent_color}'
+      content_type: text_elements
+      width: 300
+      height: 80
+      description: Standort-Block oben links in Akzentfarbe
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.2)
+        offset: 3px
+    # HEADLINE-BLOCK unter dem Standort
+    headline_block:
+      position: 40-520px width, 140-220px height
+      background_color: '{primary_color}'
+      content_type: text_elements
+      width: 480
+      height: 80
+      description: Hauptheadline in Primärfarbe
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.1)
+        offset: 2px
+    # SUBLINE-BLOCK unter der Headline
+    subline_block:
+      position: 40-520px width, 240-320px height
+      background_color: '{secondary_color}'
+      content_type: text_elements
+      width: 480
+      height: 80
+      description: Subline in Sekundärfarbe
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.1)
+        offset: 2px
+    # BENEFITS-BLOCK in der Mitte
+    benefits_block:
+      position: 40-520px width, 340-640px height
+      background_color: '{primary_color}'
+      content_type: text_elements
+      width: 480
+      height: 300
+      description: Benefits-Liste in Primärfarbe
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.1)
+        offset: 2px
+    # STELLENTITEL-BLOCK unten links
+    stellentitel_block:
+      position: 40-520px width, 660-760px height
+      background_color: '{primary_color}'
+      content_type: text_elements
+      width: 480
+      height: 100
+      description: Stellentitel in Primärfarbe
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.1)
+        offset: 2px
+    # CTA-BLOCK unten rechts
+    cta_block:
+      position: 600-900px width, 860-960px height
+      background_color: '{accent_color}'
+      content_type: text_elements
+      width: 300
+      height: 100
+      description: Call-to-Action in Akzentfarbe
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.2)
+        offset: 3px
+    # LOGO-BEREICH oben rechts
+    logo_area:
+      position: 880-1040px width, 40-120px height
+      background_color: '{secondary_color}'
+      content_type: logo
+      width: 160
+      height: 80
+      description: Logo-Bereich oben rechts in Sekundärfarbe
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.1)
+        offset: 2px
+    # MOTIV-BEREICH rechts (ganze rechte Hälfte)
+    motiv_area:
+      position: 540-1080px width, 0-1080px height
+      background_color: transparent
+      content_type: image_motiv
+      width: 540
+      height: 1080
+      description: Motiv-Bereich für fotografischen Inhalt (rechte Hälfte)
+      accent_elements:
+      - type: border_right
+        color: '{accent_color}'
+        width: 4
+  text_mapping:
+    # STANDORT mit Pin-Symbol
+    standort:
+      target_zone: standort_block
+      position: center
+      coordinates: 190,80
+      max_length: 20
+      priority: 1
+      font_size: 24px
+      color: white
+      weight: medium
+      accent_elements:
+      - type: location_pin
+        color: white
+        size: 16px
+        position: left_center
+    # HEADLINE
+    headline:
+      target_zone: headline_block
+      position: center
+      coordinates: 280,180
+      max_length: 40
+      priority: 2
+      font_size:
+        primary: 32px
+        secondary: 28px
+        fallback: 24px
+      color: white
+      weight: bold
+      line_height: '1.2'
+    # SUBLINE
+    subline:
+      target_zone: subline_block
+      position: center
+      coordinates: 280,280
+      max_length: 60
+      priority: 3
+      font_size:
+        primary: 20px
+        secondary: 18px
+        fallback: 16px
+      color: white
+      weight: regular
+      line_height: '1.3'
+    # BENEFITS
+    benefits:
+      target_zone: benefits_block
+      position: left
+      coordinates: 60,400
+      max_items: 5
+      max_length_per_item: 35
+      priority: 4
+      font_size: 18px
+      color: white
+      weight: regular
+      line_height: '1.4'
+      spacing: 24px
+      bullet_style: accent_circle
+      bullet_color: '{accent_color}'
+      accent_elements:
+      - type: bullet_points
+        color: '{accent_color}'
+        style: circle
+      - type: section_marker
+        color: '{accent_color}'
+        shape: circle
+    # STELLENTITEL
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center
+      coordinates: 280,710
+      max_length: 50
+      priority: 5
+      font_size: 28px
+      color: white
+      weight: bold
+    # CTA
+    cta:
+      target_zone: cta_block
+      position: center
+      coordinates: 750,910
+      max_length: 25
+      priority: 6
+      font_size: 24px
+      color: white
+      weight: bold
+    # LOGO
+    logo:
+      target_zone: logo_area
+      position: center
+      coordinates: 960,80
+      max_length: 15
+      priority: 7
+      font_size: 20px
+      color: '{secondary_color}'
+      weight: regular
+  motiv_integration:
+    fill_mode: cover
+    aspect_ratio: '1:2'
+    positioning: center_crop
+    focal_point: center
+    overlay_compatibility: false
+    text_safe_areas: []
+    contrast_requirements: medium
+    motiv_description_integration:
+      scene_focus: right_half_composition
+      background_blur: false
+      subject_positioning: center_right
+      lighting_preference: natural_left_light
+  typography:
+    font_family: Inter, system-ui, sans-serif
+    base_size: 16px
+    scale_ratio: 1.25
+    hierarchy:
+      h1:
+        size: 42px
+        weight: '700'
+        line_height: '1.2'
+        letter_spacing: -0.02em
+      h2:
+        size: 28px
+        weight: '600'
+        line_height: '1.3'
+      h3:
+        size: 18px
+        weight: '400'
+        line_height: '1.4'
+      body:
+        size: 20px
+        weight: '400'
+        line_height: '1.4'
+      cta:
+        size: 22px
+        weight: '600'
+        line_height: '1.2'
+  adaptive_rules:
+    long_headline:
+      trigger: length > 50
+      action: reduce_font_size
+      fallback_size: 36px
+      min_size: 30px
+    many_benefits:
+      trigger: count > 5
+      action: truncate_with_ellipsis
+      max_visible: 5
+    short_content:
+      trigger: total_content < 200_chars
+      action: increase_spacing
+      spacing_multiplier: 1.5
+    overflow_content:
+      trigger: content_height > zone_height
+      action: compress_vertically
+      min_spacing: 12px
+  constraints:
+    text_zone_margins: 40px
+    min_font_size: 14px
+    max_font_size: 60px
+    min_line_height: '1.1'
+    max_line_height: '1.6'
+    color_contrast_ratio: 4.5:1
+  style_options:
+    text_containers:
+      shape: rounded_rectangle
+      border_style: soft_shadow
+      corner_radius: medium
+      texture: gradient
+    visual_effects:
+      background_treatment: subtle_pattern
+      accent_elements: modern_minimal
+      typography_style: clean_professional
+  quality_requirements:
+    text_readability: high
+    motiv_quality: professional
+    layout_balance: symmetrical
+    ci_compliance: strict
+skizze4_hero:
+  name: Full Background Motiv + Textstack
+  description: Großflächiges Bildmotiv als Hintergrund mit überlagertem Textblock im Zentrum
+  canvas_size: 1080x1080
+  layout_type: background_motiv_overlay
+  complexity: high
+  zones:
+    # LOGO-AREA oben links
+    logo_area:
+      position: 40-200px width, 40-120px height
+      width: 160
+      height: 80
+      background_color: '{secondary_color}'
+      content_type: logo
+      description: Logo-Zone oben links
+      text_safe_area: true
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.1)
+        offset: 2px
+    # HEADLINE-BLOCK zentriert über dem Bild
+    headline_block:
+      position: 160-920px width, 360-440px height
+      width: 760
+      height: 80
+      background_color: '{primary_color}'
+      content_type: headline
+      description: Hauptheadline zentriert über dem Bild
+      text_safe_area: true
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.2)
+        offset: 3px
+    # SUBLINE-BLOCK unter der Headline
+    subline_block:
+      position: 160-920px width, 460-540px height
+      width: 760
+      height: 80
+      background_color: '{secondary_color}'
+      content_type: subline
+      description: Subline unter der Headline
+      text_safe_area: true
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.1)
+        offset: 2px
+    # BENEFITS-BLOCK unter der Subline
+    benefits_block:
+      position: 160-920px width, 560-720px height
+      width: 760
+      height: 160
+      background_color: '{primary_color}'
+      content_type: benefits
+      description: Dreizeiliger Benefit-Bereich
+      text_safe_area: true
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.2)
+        offset: 3px
+    # STELLENTITEL-BLOCK unten rechts
+    stellentitel_block:
+      position: 600-1040px width, 800-880px height
+      width: 440
+      height: 80
+      background_color: '{primary_color}'
+      content_type: stellentitel
+      description: Stellentitel unten rechts
+      text_safe_area: true
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.1)
+        offset: 2px
+    # CTA-BLOCK unten links
+    cta_block:
+      position: 40-480px width, 800-880px height
+      width: 440
+      height: 80
+      background_color: '{accent_color}'
+      content_type: cta
+      description: Call-to-Action unten links
+      text_safe_area: true
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.2)
+        offset: 3px
+    # MOTIV-AREA (ganzer Hintergrund)
+    motiv_area:
+      position: 0-1080px width, 0-1080px height
+      width: 1080
+      height: 1080
+      background_color: transparent
+      content_type: image_motiv
+      description: Vollflächiges Hintergrundmotiv
+      overlap_zone: full_background
+      accent_elements:
+      - type: background_blur
+        intensity: light
+        radius: 5px
+  text_mapping:
+    # LOGO oben links
+    logo:
+      target_zone: logo_area
+      position: center
+      coordinates: 120,80
+      font_size:
+        primary: 28px
+        fallback: 24px
+      color: '#AAAAAA'
+      priority: 6
+      weight: regular
+    # HEADLINE zentriert
+    headline:
+      target_zone: headline_block
+      position: center
+      coordinates: 540,400
+      max_length: 40
+      font_size:
+        primary: 42px
+        fallback: 36px
+      color: white
+      weight: bold
+      priority: 1
+    # SUBLINE unter der Headline
+    subline:
+      target_zone: subline_block
+      position: center
+      coordinates: 540,500
+      max_length: 60
+      font_size:
+        primary: 32px
+        fallback: 28px
+      color: white
+      weight: regular
+      priority: 2
+    # BENEFITS linksbündig
+    benefits:
+      target_zone: benefits_block
+      position: left
+      coordinates: 180,580
+      max_items: 3
+      max_length: 35
+      font_size:
+        primary: 24px
+        fallback: 20px
+      color: white
+      weight: regular
+      priority: 3
+      line_height: '1.4'
+      spacing: 20px
+      bullet_style: accent_circle
+      bullet_color: '{accent_color}'
+    # STELLENTITEL unten rechts
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center
+      coordinates: 820,840
+      max_length: 50
+      font_size:
+        primary: 28px
+        fallback: 24px
+      color: white
+      weight: bold
+      priority: 4
+    # CTA unten links
+    cta:
+      target_zone: cta_block
+      position: center
+      coordinates: 260,840
+      max_length: 25
+      font_size:
+        primary: 24px
+        fallback: 20px
+      color: white
+      weight: bold
+      priority: 5
+  motiv_integration:
+    target_zone: full_background
+    fill_mode: cover
+    aspect_ratio: '1:1'
+    positioning: center_crop
+    focal_point: center
+    text_safe_areas:
+    - headline_block
+    - subline_block
+    - benefits_block
+    - stellentitel_block
+    - cta_block
+    contrast_requirements: high
+    blur_background_if_needed: true
+  adaptive_rules:
+    long_headline:
+      trigger: length > 42
+      action: reduce_font_size
+      fallback_size: 36px
+      min_size: 34px
+    many_benefits:
+      trigger: count > 3
+      action: truncate_with_ellipsis
+      max_visible: 3
+    overflow_subline:
+      trigger: length > 60
+      action: reduce_font_size
+      fallback_size: 28px
+      min_size: 26px
+    short_content:
+      trigger: total_content < 100_chars
+      action: increase_spacing
+      spacing_multiplier: 1.4
+  typography:
+    base_font: Inter
+    weights:
+    - Regular
+    - Bold
+    fallback_font: Arial
+    alignment: centered
+  constraints:
+    min_text_size: 16px
+    max_zones_overlap: false
+    logo_mandatory: false
+  quality_requirements:
+    min_resolution: 1080x1080
+    no_text_overlap: true
+    no_transparency: true
+    contrast_ratio: AA+
+  style_options:
+    text_containers:
+      shape: rounded_rectangle
+      border_style: soft_shadow
+      corner_radius: medium
+      texture: gradient
+    visual_effects:
+      background_treatment: full_background_motiv
+      accent_elements: modern_minimal
+      typography_style: overlay_optimized
+skizze3_grid:
+  name: Fullscreen Motiv + 2-Zeiler-Headline + CTA Split
+  description: Durchgehendes Hintergrundmotiv mit zentriertem Textblock + CTA unten
+  canvas_size: 1080x1080
+  layout_type: background_full_overlay
+  complexity: high
+  zones:
+    logo_area:
+      position: 880,40 to 1040,120
+      width: 160
+      height: 80
+      coordinates: 880,40 to 1040,120
+      background_color: '{secondary_color}'
+      content_type: logo
+      description: Logo oben rechts
+      text_safe_area: true
+    headline_block:
+      position: 100,280 to 980,440
+      width: 880
+      height: 160
+      coordinates: 100,280 to 980,440
+      background_color: '{primary_color}'
+      content_type: headline
+      description: Headline über zwei Zeilen als EIN Textblock
+      text_safe_area: true
+    subline_block:
+      position: 100,460 to 980,540
+      width: 880
+      height: 80
+      coordinates: 100,460 to 980,540
+      background_color: '{secondary_color}'
+      content_type: subline
+      description: Subline unter der zweizeiligen Headline
+      text_safe_area: true
+    stellentitel_block:
+      position: 60,880 to 520,980
+      width: 460
+      height: 100
+      coordinates: 60,880 to 520,980
+      background_color: '{primary_color}'
+      content_type: stellentitel
+      description: Stellentitel unten links
+      text_safe_area: true
+    cta_block:
+      position: 760,880 to 1040,1000
+      width: 280
+      height: 120
+      coordinates: 760,880 to 1040,1000
+      background_color: '{accent_color}'
+      content_type: cta
+      description: Call-To-Action rechts unten
+      text_safe_area: true
+    benefits_block:
+      position: 100,560 to 980,860
+      width: 880
+      height: 300
+      coordinates: 100,560 to 980,860
+      background_color: '{primary_color}'
+      content_type: benefits
+      description: Benefits-Liste unter der Subline
+      text_safe_area: true
+  text_mapping:
+    logo:
+      target_zone: logo_area
+      position: top_right
+      coordinates: 900,60
+      font_size:
+        primary: 28px
+      color: '#AAAAAA'
+      priority: 6
+    headline:
+      target_zone: headline_block
+      position: center
+      coordinates: 540,360
+      max_length: 70
+      font_size:
+        primary: 42px
+        fallback: 36px
+      color: white
+      weight: bold
+      priority: 1
+    subline:
+      target_zone: subline_block
+      position: center
+      coordinates: 540,500
+      max_length: 60
+      font_size:
+        primary: 32px
+        fallback: 28px
+      color: white
+      weight: regular
+      priority: 2
+    benefits:
+      target_zone: benefits_block
+      position: center_horizontal
+      coordinates: 540,710
+      max_items: 4
+      max_length: 35
+      font_size:
+        primary: 26px
+        fallback: 22px
+      color: white
+      bullet_style: accent_circle
+      bullet_color: '{accent_color}'
+      line_spacing: 1.3
+      priority: 5
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center
+      coordinates: 290,930
+      max_length: 35
+      font_size:
+        primary: 36px
+        fallback: 30px
+      color: '#002D72'
+      weight: bold
+      priority: 3
+    cta:
+      target_zone: cta_block
+      position: center
+      coordinates: 900,940
+      max_length: 20
+      font_size:
+        primary: 30px
+        fallback: 26px
+      color: '#FF5500'
+      priority: 4
+  motiv_integration:
+    target_zone: full_background
+    fill_mode: cover
+    aspect_ratio: '1:1'
+    positioning: center_crop
+    focal_point: center
+    text_safe_areas:
+    - headline_block
+    - subline_block
+    - benefits_block
+    - stellentitel_block
+    - cta_block
+    contrast_requirements: high
+    blur_background_if_needed: true
+  adaptive_rules:
+    long_headline:
+      trigger: length > 60
+      action: reduce_font_size
+      fallback_size: 36px
+    long_subline:
+      trigger: length > 55
+      action: reduce_font_size
+      fallback_size: 28px
+    overflow_benefits:
+      trigger: items > 4
+      action: truncate_list
+      max_items: 4
+  typography:
+    base_font: Inter
+    weights:
+    - Regular
+    - Bold
+    fallback_font: Arial
+    alignment: centered
+  constraints:
+    min_text_size: 16px
+    max_zones_overlap: false
+    logo_mandatory: false
+  quality_requirements:
+    min_resolution: 1080x1080
+    no_text_overlap: true
+    no_transparency: true
+    contrast_ratio: AA+
+  style_options:
+    text_containers:
+      shape: rounded_rectangle
+      border_style: soft_shadow
+      corner_radius: medium
+      texture: gradient
+    visual_effects:
+      background_treatment: full_background_motiv
+      accent_elements: modern_minimal
+      typography_style: overlay_optimized
+skizze2_horizontal:
+  name: Linke Bildhälfte Motiv, rechte Hälfte Textstack
+  description: Klassische 50/50 Teilung – links Bild (inkl. Logo), rechts gestapelter
+    Textblock
+  canvas_size: 1080x1080
+  layout_type: split_vertical
+  complexity: medium
+  zones:
+    logo_area:
+      position: 40,40 to 240,120
+      width: 200
+      height: 80
+      coordinates: 40,40 to 240,120
+      background_color: '{secondary_color}'
+      content_type: logo
+      description: Logo oben links im Motivbereich
+      text_safe_area: true
+    motiv_block:
+      position: 0,0 to 540,1080
+      width: 540
+      height: 1080
+      coordinates: 0,0 to 540,1080
+      background_color: image
+      content_type: motiv
+      description: Fotomotiv auf linker Hälfte
+      text_safe_area: false
+    headline_block:
+      position: 560,160 to 1080,280
+      width: 520
+      height: 120
+      coordinates: 560,160 to 1080,280
+      background_color: '{primary_color}'
+      content_type: headline
+      description: Headline ganz oben im Textstack
+      text_safe_area: true
+    subline_block:
+      position: 560,300 to 1080,380
+      width: 520
+      height: 80
+      coordinates: 560,300 to 1080,380
+      background_color: '{secondary_color}'
+      content_type: subline
+      description: Subline unterhalb der Headline
+      text_safe_area: true
+    benefits_block:
+      position: 560,400 to 1080,700
+      width: 520
+      height: 300
+      coordinates: 560,400 to 1080,700
+      background_color: '{primary_color}'
+      content_type: benefits
+      description: Benefits Block (3 Bullet-Zonen möglich)
+      text_safe_area: true
+    stellentitel_block:
+      position: 560,740 to 1080,840
+      width: 520
+      height: 100
+      coordinates: 560,740 to 1080,840
+      background_color: '{primary_color}'
+      content_type: stellentitel
+      description: Stellentitel am unteren Rand des Textstacks
+      text_safe_area: true
+    cta_block:
+      position: 560,860 to 1080,960
+      width: 520
+      height: 100
+      coordinates: 560,860 to 1080,960
+      background_color: '{accent_color}'
+      content_type: cta
+      description: Call-To-Action Button am Ende des Textstacks
+      text_safe_area: true
+  text_mapping:
+    logo:
+      target_zone: logo_area
+      position: top_left
+      coordinates: 60,60
+      font_size:
+        primary: 28px
+      color: '#AAAAAA'
+      priority: 6
+    headline:
+      target_zone: headline_block
+      position: center
+      coordinates: 820,220
+      max_length: 60
+      font_size:
+        primary: 40px
+        fallback: 36px
+      color: white
+      weight: bold
+      priority: 1
+    subline:
+      target_zone: subline_block
+      position: center
+      coordinates: 820,340
+      max_length: 50
+      font_size:
+        primary: 32px
+        fallback: 28px
+      color: white
+      weight: regular
+      priority: 2
+    benefits:
+      target_zone: benefits_block
+      position: top_left
+      coordinates: 580,420
+      max_items: 3
+      max_length: 35
+      font_size:
+        primary: 26px
+        fallback: 22px
+      color: white
+      bullet_style: accent_circle
+      bullet_color: '{accent_color}'
+      line_spacing: 1.4
+      priority: 3
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center
+      coordinates: 820,790
+      max_length: 30
+      font_size:
+        primary: 34px
+        fallback: 28px
+      color: '#002D72'
+      weight: bold
+      priority: 4
+    cta:
+      target_zone: cta_block
+      position: center
+      coordinates: 820,910
+      max_length: 20
+      font_size:
+        primary: 30px
+        fallback: 26px
+      color: '#FF5500'
+      weight: bold
+      priority: 5
+  motiv_integration:
+    target_zone: motiv_block
+    fill_mode: cover
+    aspect_ratio: '1:1'
+    positioning: center_crop
+    focal_point: center
+    text_safe_areas:
+    - logo_area
+    contrast_requirements: medium
+  adaptive_rules:
+    long_headline:
+      trigger: length > 60
+      action: reduce_font_size
+      fallback_size: 36px
+    long_subline:
+      trigger: length > 50
+      action: reduce_font_size
+      fallback_size: 28px
+    many_benefits:
+      trigger: count > 3
+      action: truncate_with_ellipsis
+      max_visible: 3
+  typography:
+    base_font: Inter
+    weights:
+    - Regular
+    - Bold
+    fallback_font: Arial
+    alignment: left_aligned
+  constraints:
+    min_text_size: 16px
+    max_zones_overlap: false
+    logo_mandatory: false
+  quality_requirements:
+    min_resolution: 1080x1080
+    no_text_overlap: true
+    no_transparency: true
+    contrast_ratio: AA
+  style_options:
+    text_containers:
+      shape: rounded_rectangle
+      border_style: soft_shadow
+      corner_radius: medium
+      texture: gradient
+    visual_effects:
+      background_treatment: split_layout
+      accent_elements: modern_minimal
+      typography_style: textstack_optimized
+skizze5_sidebar:
+  name: Grid-Layout
+  description: Visuelles Zentrum oben, strukturierter Text unten mit zweispaltigem
+    Abschluss
+  canvas_size: 1080x1080
+  layout_type: grid_vertical
+  complexity: medium
+  zones:
+    logo_area:
+      position: 40,40 to 200,120
+      width: 160
+      height: 80
+      coordinates: 40,40 to 200,120
+      background_color: '{secondary_color}'
+      content_type: logo
+      description: Logo-Zone oben links
+      text_safe_area: true
+    motiv_area:
+      position: 0,140 to 1080,460
+      width: 1080
+      height: 320
+      coordinates: 0,140 to 1080,460
+      background_color: transparent
+      content_type: motiv
+      description: Fotomotiv – zentrale Bildwirkung
+      text_safe_area: false
+    headline_block:
+      position: 180,480 to 900,560
+      width: 720
+      height: 80
+      coordinates: 180,480 to 900,560
+      background_color: '{primary_color}'
+      content_type: headline
+      description: Hauptheadline mittig
+      text_safe_area: true
+    subline_block:
+      position: 180,580 to 900,660
+      width: 720
+      height: 80
+      coordinates: 180,580 to 900,660
+      background_color: '{secondary_color}'
+      content_type: subline
+      description: Subline mittig unter der Headline
+      text_safe_area: true
+    benefits_block:
+      position: 40,680 to 1040,820
+      width: 1000
+      height: 140
+      coordinates: 40,680 to 1040,820
+      background_color: '{secondary_color}'
+      content_type: benefits
+      description: Benefits-Liste zentral
+      text_safe_area: true
+    cta_block:
+      position: 60,840 to 360,960
+      width: 300
+      height: 120
+      coordinates: 60,840 to 360,960
+      background_color: '{accent_color}'
+      content_type: cta
+      description: Call-to-Action Button links unten
+      text_safe_area: true
+    stellentitel_block:
+      position: 620,840 to 1020,960
+      width: 400
+      height: 120
+      coordinates: 620,840 to 1020,960
+      background_color: '{primary_color}'
+      content_type: stellentitel
+      description: Stellentitel rechts unten
+      text_safe_area: true
+  text_mapping:
+    logo:
+      target_zone: logo_area
+      position: top_left
+      coordinates: 60,60
+      font_size:
+        primary: 28px
+      color: '#AAAAAA'
+      priority: 6
+    headline:
+      target_zone: headline_block
+      position: center
+      coordinates: 540,520
+      max_length: 40
+      font_size:
+        primary: 42px
+        fallback: 36px
+      color: white
+      weight: bold
+      priority: 1
+    subline:
+      target_zone: subline_block
+      position: center
+      coordinates: 540,620
+      max_length: 60
+      font_size:
+        primary: 32px
+        fallback: 28px
+      color: white
+      weight: regular
+      priority: 2
+    benefits:
+      target_zone: benefits_block
+      position: center_horizontal
+      coordinates: 540,750
+      max_items: 4
+      max_length: 35
+      font_size:
+        primary: 22px
+        fallback: 18px
+      color: '{text_color}'
+      bullet_style: accent_circle
+      bullet_color: '{accent_color}'
+      line_spacing: 1.3
+      priority: 5
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center
+      coordinates: 820,900
+      max_length: 35
+      font_size:
+        primary: 36px
+        fallback: 30px
+      color: '#002D72'
+      weight: bold
+      priority: 4
+    cta:
+      target_zone: cta_block
+      position: center
+      coordinates: 210,900
+      max_length: 20
+      font_size:
+        primary: 30px
+        fallback: 26px
+      color: '#FF5500'
+      priority: 3
+  motiv_integration:
+    target_zone: motiv_area
+    fill_mode: cover
+    aspect_ratio: '1:1'
+    positioning: center_crop
+    focal_point: upper_center
+    text_safe_areas:
+    - bottom 460–1080
+    contrast_requirements: medium
+  adaptive_rules:
+    long_headline:
+      trigger: length > 42
+      action: reduce_font_size
+      fallback_size: 36px
+    long_subline:
+      trigger: length > 55
+      action: reduce_font_size
+      fallback_size: 28px
+    overflow_benefits:
+      trigger: items > 4
+      action: truncate_list
+      max_items: 4
+  typography:
+    base_font: Inter
+    weights:
+    - Regular
+    - Bold
+    fallback_font: Arial
+    alignment: centered
+  constraints:
+    min_text_size: 16px
+    max_zones_overlap: false
+    logo_mandatory: false
+  quality_requirements:
+    min_resolution: 1080x1080
+    no_text_overlap: true
+    no_transparency: true
+    contrast_ratio: AA+
+  style_options:
+    text_containers:
+      shape: rounded_rectangle
+      border_style: soft_shadow
+      corner_radius: medium
+      texture: gradient
+    visual_effects:
+      background_treatment: subtle_pattern
+      accent_elements: modern_minimal
+      typography_style: professional
+skizze6_card:
+  name: Vertikales Stack-Layout
+  description: Motiv zentriert, Textzonen darunter gestaffelt mit CTA rechts unten
+  canvas_size: 1080x1080
+  layout_type: vertical_stack
+  complexity: medium
+  zones:
+    logo_area:
+      position: 40,40 to 200,120
+      width: 160
+      height: 80
+      coordinates: 40,40 to 200,120
+      background_color: '{secondary_color}'
+      content_type: logo
+      description: Logo-Zone oben links
+      text_safe_area: true
+    motiv_area:
+      position: 0,140 to 1080,460
+      width: 1080
+      height: 320
+      coordinates: 0,140 to 1080,460
+      background_color: transparent
+      content_type: motiv
+      description: Hauptmotiv (einheitlich), reicht visuell über 2 Zonen
+      text_safe_area: false
+    headline_block:
+      position: 40,480 to 1040,560
+      width: 1000
+      height: 80
+      coordinates: 40,480 to 1040,560
+      background_color: '{primary_color}'
+      content_type: headline
+      description: Headline mittig über gesamter Breite
+      text_safe_area: true
+    subline_block:
+      position: 40,580 to 1040,660
+      width: 1000
+      height: 80
+      coordinates: 40,580 to 1040,660
+      background_color: '{secondary_color}'
+      content_type: subline
+      description: Subline mittig unter der Headline
+      text_safe_area: true
+    stellentitel_block:
+      position: 600,700 to 1040,780
+      width: 440
+      height: 80
+      coordinates: 600,700 to 1040,780
+      background_color: '{primary_color}'
+      content_type: stellentitel
+      description: Stellentitel rechts unterhalb Subline
+      text_safe_area: true
+    benefits_block:
+      position: 40,700 to 580,960
+      width: 540
+      height: 260
+      coordinates: 40,700 to 580,960
+      background_color: '{secondary_color}'
+      content_type: benefits
+      description: Benefits-Liste links unten
+      text_safe_area: true
+    cta_block:
+      position: 880,960 to 1080,1080
+      width: 200
+      height: 120
+      coordinates: 880,960 to 1080,1080
+      background_color: '{accent_color}'
+      content_type: cta
+      description: Call-To-Action Button unten rechts
+      text_safe_area: true
+  text_mapping:
+    logo:
+      target_zone: logo_area
+      position: top_left
+      coordinates: 60,60
+      font_size:
+        primary: 28px
+      color: '#AAAAAA'
+      priority: 5
+    headline:
+      target_zone: headline_block
+      position: center
+      coordinates: 540,520
+      max_length: 40
+      font_size:
+        primary: 42px
+        fallback: 36px
+      color: white
+      weight: bold
+      priority: 1
+    subline:
+      target_zone: subline_block
+      position: center
+      coordinates: 540,620
+      max_length: 60
+      font_size:
+        primary: 34px
+        fallback: 28px
+      color: white
+      weight: regular
+      priority: 2
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center
+      coordinates: 820,740
+      max_length: 35
+      font_size:
+        primary: 36px
+        fallback: 30px
+      color: '#002D72'
+      weight: bold
+      priority: 3
+    benefits:
+      target_zone: benefits_block
+      position: left_top
+      coordinates: 60,730
+      max_items: 4
+      max_length: 30
+      font_size:
+        primary: 24px
+        fallback: 20px
+      color: '{text_color}'
+      bullet_style: accent_circle
+      bullet_color: '{accent_color}'
+      line_spacing: 1.4
+      priority: 4
+  motiv_integration:
+    target_zone: motiv_area
+    fill_mode: cover
+    aspect_ratio: '1:1'
+    positioning: center_crop
+    focal_point: upper_center
+    text_safe_areas:
+    - bottom 460–1080
+    contrast_requirements: medium
+  adaptive_rules:
+    long_headline:
+      trigger: length > 40
+      action: reduce_font_size
+      fallback_size: 36px
+    long_subline:
+      trigger: length > 55
+      action: reduce_font_size
+      fallback_size: 28px
+    overflow_benefits:
+      trigger: items > 4
+      action: truncate_list
+      max_items: 4
+  typography:
+    base_font: Inter
+    weights:
+    - Regular
+    - Bold
+    fallback_font: Arial
+    alignment: centered
+  constraints:
+    min_text_size: 16px
+    max_zones_overlap: false
+    logo_mandatory: false
+  quality_requirements:
+    min_resolution: 1080x1080
+    no_text_overlap: true
+    no_transparency: true
+    contrast_ratio: AA+
+  style_options:
+    text_containers:
+      shape: rounded_rectangle
+      border_style: soft_shadow
+      corner_radius: medium
+      texture: gradient
+    visual_effects:
+      background_treatment: subtle_pattern
+      accent_elements: modern_minimal
+      typography_style: professional
+skizze7_split_diagonal:
+  name: Motiv oben, Text unten
+  description: Großflächiges Motiv mit minimalistischem Textbereich im unteren Drittel
+  canvas_size: 1080x1080
+  layout_type: stacked_bottom_text
+  complexity: low
+  zones:
+    logo_area:
+      position: 880,40 to 1040,120
+      width: 160
+      height: 80
+      coordinates: 880,40 to 1040,120
+      background_color: '{secondary_color}'
+      content_type: logo
+      description: Logo-Zone oben rechts
+      text_safe_area: true
+    motiv_area:
+      position: 0,0 to 1080,800
+      width: 1080
+      height: 800
+      coordinates: 0,0 to 1080,800
+      background_color: transparent
+      content_type: motiv
+      description: 'Fotomotiv: Pflegekraft'
+      overlap_zone: none
+    stellentitel_block:
+      position: 40,820 to 680,900
+      width: 640
+      height: 80
+      coordinates: 40,820 to 680,900
+      background_color: '{primary_color}'
+      content_type: stellentitel
+      description: Berufsbezeichnung (Pflegekraft etc.)
+      text_safe_area: true
+    subline_block:
+      position: 40,920 to 700,1000
+      width: 660
+      height: 80
+      coordinates: 40,920 to 700,1000
+      background_color: '{secondary_color}'
+      content_type: subline
+      description: Ergänzender Text zur Position
+      text_safe_area: true
+  text_mapping:
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center_left
+      coordinates: 60,860
+      max_length: 40
+      priority: 1
+      font_size:
+        primary: 40px
+        fallback: 34px
+      color: '#003B8F'
+      weight: bold
+    subline:
+      target_zone: subline_block
+      position: center_left
+      coordinates: 60,960
+      max_length: 60
+      priority: 2
+      font_size:
+        primary: 32px
+        fallback: 28px
+      color: white
+      weight: regular
+    logo:
+      target_zone: logo_area
+      position: top_right
+      coordinates: 900,60
+      priority: 4
+      font_size:
+        primary: 30px
+        fallback: 24px
+      color: '#AAAAAA'
+      weight: regular
+  motiv_integration:
+    target_zone: motiv_area
+    fill_mode: cover
+    aspect_ratio: '1:1'
+    positioning: center_crop
+    focal_point: center
+    text_safe_areas:
+    - bottom 800–1080
+    contrast_requirements: high
+    motiv_description_integration:
+      healthcare_professional: centered in motiv_area
+      workplace_setting: hospital or care facility background
+      emotional_tone: professional and approachable
+  adaptive_rules:
+    long_stellentitel:
+      trigger: length > 35
+      action: reduce_font_size
+      fallback_size: 34px
+      min_size: 28px
+    long_subline:
+      trigger: length > 55
+      action: reduce_font_size
+      fallback_size: 28px
+      min_size: 24px
+    short_content:
+      trigger: total_content < 100_chars
+      action: increase_spacing
+      spacing_multiplier: 1.4
+  typography:
+    base_font: Inter
+    weights:
+    - Regular
+    - Bold
+    fallback_font: Arial
+    alignment: left
+    hierarchy:
+      stellentitel: large_prominent
+      subline: medium_support
+      logo: small_discrete
+  constraints:
+    text_zone_margins: 20px
+    min_font_size: 18px
+    max_font_size: 50px
+    min_line_height: '1.2'
+    max_line_height: '1.4'
+    color_contrast_ratio: 4.5:1
+  style_options:
+    text_containers:
+      shape: organic_blob
+      border_style: glow
+      corner_radius: large
+      texture: glass_effect
+    visual_effects:
+      background_treatment: organic
+      accent_elements: playful
+      typography_style: creative_bold
+  quality_requirements:
+    text_readability: high
+    motiv_quality: professional
+    layout_balance: motiv_dominant
+    ci_compliance: strict
+    min_resolution: 1080x1080
+    no_text_overlap: true
+    contrast_ratio: AA+
+skizze8_banner:
+  name: Banner Layout
+  description: Gestapelte Zonenstruktur mit Header, Motiv und CTA/Benefits-Bereich
+  canvas_size: 1080x1080
+  layout_type: banner_stacked
+  complexity: low
+  zones:
+    # TOP-BANNER (ganze Breite oben)
+    top_banner:
+      position: 0-1080px width, 0-200px height
+      width: 1080
+      height: 200
+      background_color: '{primary_color}'
+      content_type: headline + logo
+      description: Kopfleiste mit Headline und Logo
+      text_safe_area: true
+      accent_elements:
+      - type: border_radius
+        radius: 0px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.1)
+        offset: 2px
+    # BENEFITS-BLOCK unter dem Top-Banner
+    benefits_block:
+      position: 0-1080px width, 200-360px height
+      width: 1080
+      height: 160
+      background_color: '{primary_color}'
+      content_type: benefits
+      description: Bereich für Benefits, evtl. als Bulletpoints
+      text_safe_area: true
+      accent_elements:
+      - type: border_radius
+        radius: 0px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.1)
+        offset: 2px
+    # STELLENTITEL-BLOCK unter den Benefits
+    stellentitel_block:
+      position: 0-1080px width, 360-440px height
+      width: 1080
+      height: 80
+      background_color: '{secondary_color}'
+      content_type: stellentitel
+      description: Stellentitel – zentriert
+      text_safe_area: true
+      accent_elements:
+      - type: border_radius
+        radius: 0px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.1)
+        offset: 2px
+    # MOTIV-AREA (Hauptbereich)
+    motiv_area:
+      position: 0-1080px width, 440-960px height
+      width: 1080
+      height: 520
+      background_color: transparent
+      content_type: motiv
+      description: 'Hauptmotiv: Pflegekraft'
+      overlap_zone: optional bottom overlay
+    # CTA-AREA unten links
+    cta_area:
+      position: 0-420px width, 960-1080px height
+      width: 420
+      height: 120
+      background_color: '{accent_color}'
+      content_type: cta
+      description: Call-To-Action Button links unten
+      text_safe_area: true
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+      - type: soft_shadow
+        color: rgba(0,0,0,0.2)
+        offset: 3px
+  text_mapping:
+    # HEADLINE im Top-Banner
+    headline:
+      target_zone: top_banner
+      position: center
+      coordinates: 540,100
+      max_length: 40
+      priority: 1
+      font_size:
+        primary: 46px
+        secondary: 40px
+        fallback: 34px
+      color: white
+      weight: bold
+    # LOGO im Top-Banner rechts
+    logo:
+      target_zone: top_banner
+      position: top_right
+      coordinates: 940,20
+      max_length: 10
+      priority: 4
+      font_size:
+        primary: 36px
+        fallback: 28px
+      color: '#CCCCCC'
+      weight: regular
+    # BENEFITS im Benefits-Block
+    benefits:
+      target_zone: benefits_block
+      position: left
+      coordinates: 60,230
+      max_length: 3
+      priority: 2
+      font_size:
+        primary: 32px
+        fallback: 28px
+      color: white
+      weight: regular
+      bullet_style: accent_circle
+      bullet_color: '{accent_color}'
+    # STELLENTITEL im Stellentitel-Block
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center
+      coordinates: 540,400
+      max_length: 30
+      priority: 3
+      font_size:
+        primary: 36px
+        fallback: 30px
+      color: '{primary_color}'
+      weight: bold
+    # CTA im CTA-Bereich
+    cta:
+      target_zone: cta_area
+      position: center
+      coordinates: 210,1020
+      max_length: 25
+      priority: 5
+      font_size: 24px
+      color: white
+      weight: bold
+  motiv_integration:
+    target_zone: motiv_area
+    fill_mode: cover
+    aspect_ratio: '1:1'
+    positioning: center_crop
+    focal_point: center
+    text_safe_areas:
+    - top 0–440
+    - bottom 960–1080
+    contrast_requirements: medium
+    motiv_description_integration:
+      healthcare_professional: centered in motiv_area
+      workplace_setting: hospital or care facility background
+      emotional_tone: professional and approachable
+  adaptive_rules:
+    long_headline:
+      trigger: length > 35
+      action: reduce_font_size
+      fallback_size: 40px
+      min_size: 34px
+    many_benefits:
+      trigger: count > 3
+      action: truncate_with_ellipsis
+      max_visible: 3
+    short_content:
+      trigger: total_content < 150_chars
+      action: increase_spacing
+      spacing_multiplier: 1.3
+  typography:
+    base_font: Inter
+    weights:
+    - Regular
+    - Bold
+    fallback_font: Arial
+    alignment: centered
+    hierarchy:
+      headline: large_prominent
+      stellentitel: medium_emphasis
+      benefits: small_readable
+      cta: medium_action
+  constraints:
+    text_zone_margins: 40px
+    min_font_size: 16px
+    max_font_size: 50px
+    min_line_height: '1.2'
+    max_line_height: '1.5'
+    color_contrast_ratio: 4.5:1
+  style_options:
+    text_containers:
+      shape: hexagon
+      border_style: solid
+      corner_radius: small
+      texture: pattern
+    visual_effects:
+      background_treatment: geometric
+      accent_elements: bold
+      typography_style: modern_sans
+  quality_requirements:
+    text_readability: high
+    motiv_quality: professional
+    layout_balance: vertical_rhythm
+    ci_compliance: strict
+    min_resolution: 1080x1080
+    no_text_overlap: true
+    contrast_ratio: AA+
+skizze9_magazine:
+  name: Magazin-Layout
+  description: Oben visuelles Motiv, darunter strukturierte Text- und CTA-Blöcke im
+    Magazin-Stil
+  canvas_size: 1080x1080
+  layout_type: magazine_split
+  complexity: medium
+  zones:
+    logo_area:
+      position: 880,40 to 1040,120
+      width: 160
+      height: 80
+      coordinates: 880,40 to 1040,120
+      background_color: '#DDDDDD'
+      content_type: logo
+      description: Logo-Zone oben rechts
+      text_safe_area: true
+    motiv_area:
+      position: 0,0 to 1080,520
+      width: 1080
+      height: 520
+      coordinates: 0,0 to 1080,520
+      background_color: transparent
+      content_type: motiv
+      description: Visuelles Motiv mit Pflegekraft
+      overlap_zone: 'bottom: 500–540px'
+    headline_block:
+      position: 40,540 to 680,600
+      width: 640
+      height: 60
+      coordinates: 40,540 to 680,600
+      background_color: '{primary_color}'
+      content_type: headline
+      description: Hauptheadline unterhalb des Motivs
+      text_safe_area: true
+    cta_block:
+      position: 720,540 to 1080,620
+      width: 360
+      height: 80
+      coordinates: 720,540 to 1080,620
+      background_color: '{accent_color}'
+      content_type: cta
+      description: Call-To-Action rechts neben der Headline
+      text_safe_area: true
+    benefits_block:
+      position: 40,620 to 1040,780
+      width: 1000
+      height: 160
+      coordinates: 40,620 to 1040,780
+      background_color: '{primary_color}'
+      content_type: benefits
+      description: Benefit-Zone mit 3 Punkten
+      text_safe_area: true
+    stellentitel_block:
+      position: 40,800 to 800,880
+      width: 760
+      height: 80
+      coordinates: 40,800 to 800,880
+      background_color: '{primary_color}'
+      content_type: stellentitel
+      description: Stellentitel zentriert oder linksbündig
+      text_safe_area: true
+  text_mapping:
+    logo:
+      target_zone: logo_area
+      position: top_right
+      coordinates: 900,60
+      priority: 5
+      font_size:
+        primary: 30px
+        fallback: 24px
+      color: '#AAAAAA'
+      weight: regular
+    headline:
+      target_zone: headline_block
+      position: center_left
+      coordinates: 60,570
+      max_length: 40
+      priority: 1
+      font_size:
+        primary: 42px
+        fallback: 36px
+      color: white
+      weight: bold
+    cta:
+      target_zone: cta_block
+      position: center
+      coordinates: 900,580
+      max_length: 20
+      priority: 2
+      font_size:
+        primary: 34px
+        fallback: 30px
+      color: '#FF5500'
+      weight: bold
+    benefits:
+      target_zone: benefits_block
+      position: top_left
+      coordinates: 60,640
+      max_length: 3
+      priority: 3
+      font_size:
+        primary: 32px
+        fallback: 28px
+      color: white
+      weight: regular
+      bullet_style: accent_circle
+      bullet_color: '{accent_color}'
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center_left
+      coordinates: 60,840
+      max_length: 35
+      priority: 4
+      font_size:
+        primary: 38px
+        fallback: 32px
+      color: '#002D72'
+      weight: bold
+  motiv_integration:
+    target_zone: motiv_area
+    fill_mode: cover
+    aspect_ratio: '1:1'
+    positioning: center_crop
+    focal_point: center
+    text_safe_areas:
+    - bottom 500–540px
+    - all text zones below 540px
+    contrast_requirements: high
+    motiv_description_integration:
+      healthcare_professional: centered in motiv_area
+      workplace_setting: hospital or care facility background
+      emotional_tone: professional and approachable
+  adaptive_rules:
+    long_headline:
+      trigger: length > 40
+      action: reduce_font_size
+      fallback_size: 36px
+      min_size: 30px
+    many_benefits:
+      trigger: count > 3
+      action: truncate_with_ellipsis
+      max_visible: 3
+    short_content:
+      trigger: total_content < 120_chars
+      action: increase_spacing
+      spacing_multiplier: 1.3
+  typography:
+    base_font: Inter
+    weights:
+    - Regular
+    - Bold
+    fallback_font: Arial
+    alignment: left
+    hierarchy:
+      headline: large_prominent
+      stellentitel: medium_emphasis
+      benefits: medium_readable
+      cta: medium_action
+      logo: small_discrete
+  constraints:
+    text_zone_margins: 20px
+    min_font_size: 16px
+    max_font_size: 50px
+    min_line_height: '1.2'
+    max_line_height: '1.5'
+    color_contrast_ratio: 4.5:1
+  style_options:
+    text_containers:
+      shape: circle
+      border_style: dotted
+      corner_radius: xl
+      texture: matte
+    visual_effects:
+      background_treatment: subtle_pattern
+      accent_elements: classic
+      typography_style: elegant_serif
+  quality_requirements:
+    text_readability: high
+    motiv_quality: professional
+    layout_balance: motiv_text_balanced
+    ci_compliance: strict
+    min_resolution: 1080x1080
+    no_text_overlap: true
+    contrast_ratio: AA+
+
+skizze10_modern_split:
+  name: Modern Split
+  description: Text links, Motiv rechts mit curved style
+  canvas_size: 1080x1080
+  layout_type: modern_split
+  complexity: medium
+  zones:
+    standort_block:
+      position: 40-240px width, 40-120px height
+      background_color: '{accent_color}'
+      content_type: text_elements
+      width: 200
+      height: 80
+      description: Standort-Block oben links in Akzentfarbe
+      accent_elements:
+      - type: border_radius
+        radius: 8px
+    logo_area:
+      position: 880-1040px width, 40-120px height
+      background_color: '{secondary_color}'
+      content_type: logo
+      width: 160
+      height: 80
+      description: Logo-Bereich oben rechts
+    headline_block:
+      position: 40-1040px width, 160-240px height
+      background_color: transparent
+      content_type: text_elements
+      width: 1000
+      height: 80
+      description: Hauptüberschrift
+      font_size: 32px
+      font_weight: bold
+      color: '{primary_color}'
+    benefits_block:
+      position: 40-1040px width, 260-400px height
+      background_color: transparent
+      content_type: text_elements
+      width: 1000
+      height: 140
+      description: Benefits-Liste
+      font_size: 20px
+      font_weight: normal
+      color: '{primary_color}'
+    stellentitel_block:
+      position: 40-460px width, 880-980px height
+      background_color: '{primary_color}'
+      content_type: text_elements
+      width: 420
+      height: 100
+      description: Stellentitel unten links
+      font_size: 28px
+      font_weight: bold
+    cta_block:
+      position: 80-440px width, 840-920px height
+      background_color: '{accent_color}'
+      content_type: text_elements
+      width: 360
+      height: 80
+      description: Call-to-Action Button
+      font_size: 24px
+      font_weight: bold
+    motiv_area:
+      position: 500-1040px width, 460-1000px height
+      background_color: transparent
+      content_type: image_motiv
+      width: 540
+      height: 540
+      description: Motiv-Bereich rechts mit curved style
+      style: curved
+  text_mapping:
+    standort:
+      target_zone: standort_block
+      position: center
+      coordinates: 140,80
+      max_length: 20
+      priority: 1
+      font_size: 24px
+      color: '{background_color}'
+      weight: medium
+    logo:
+      target_zone: logo_area
+      position: center
+      coordinates: 960,80
+      max_length: 15
+      priority: 2
+      font_size: 20px
+      color: '{secondary_color}'
+      weight: regular
+    headline:
+      target_zone: headline_block
+      position: top_left
+      coordinates: 40,160
+      max_length: 50
+      priority: 3
+      font_size: 32px
+      color: '{primary_color}'
+      weight: bold
+    benefits:
+      target_zone: benefits_block
+      position: top_left
+      coordinates: 40,260
+      max_items: 5
+      max_length_per_item: 35
+      priority: 4
+      font_size: 20px
+      color: '{primary_color}'
+      weight: normal
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center
+      coordinates: 250,570
+      max_length: 50
+      priority: 5
+      font_size: 28px
+      color: '{primary_color}'
+      weight: bold
+    cta:
+      target_zone: cta_block
+      position: center
+      coordinates: 260,710
+      max_length: 30
+      priority: 6
+      font_size: 24px
+      color: '{primary_color}'
+      weight: bold
+
+skizze11_dynamic_layout:
+  name: Dynamic Layout
+  description: Text links gestapelt, Motiv rechts mit auslaufendem Kreis
+  canvas_size: 1080x1080
+  layout_type: dynamic_layout
+  complexity: medium
+  zones:
+    logo_area:
+      position: 40-240px width, 40-120px height
+      background_color: '{secondary_color}'
+      content_type: logo
+      width: 200
+      height: 80
+      description: Logo-Bereich oben links
+    standort_block:
+      position: 880-1040px width, 60-120px height
+      background_color: '{accent_color}'
+      content_type: text_elements
+      width: 160
+      height: 60
+      description: Standort-Block oben rechts in Akzentfarbe
+      accent_elements:
+      - type: border_radius
+        radius: 6px
+    headline_block:
+      position: 40-1040px width, 160-260px height
+      background_color: transparent
+      content_type: text_elements
+      width: 1000
+      height: 100
+      description: Hauptüberschrift
+      font_size: 36px
+      font_weight: bold
+      color: '{primary_color}'
+    subline_block:
+      position: 40-1040px width, 280-360px height
+      background_color: transparent
+      content_type: text_elements
+      width: 1000
+      height: 80
+      description: Untertitel
+      font_size: 24px
+      font_weight: normal
+      color: '{secondary_color}'
+    benefits_block:
+      position: 40-520px width, 380-600px height
+      background_color: transparent
+      content_type: text_elements
+      width: 480
+      height: 220
+      description: Benefits-Liste links
+      font_size: 20px
+      font_weight: normal
+      color: '{primary_color}'
+    cta_block:
+      position: 60-320px width, 620-720px height
+      background_color: '{accent_color}'
+      content_type: text_elements
+      width: 260
+      height: 100
+      description: Call-to-Action Button
+      font_size: 24px
+      font_weight: bold
+    stellentitel_block:
+      position: 40-480px width, 740-840px height
+      background_color: '{primary_color}'
+      content_type: text_elements
+      width: 440
+      height: 100
+      description: Stellentitel unten links
+      font_size: 28px
+      font_weight: bold
+    motiv_area:
+      position: 560-1020px width, 360-1020px height
+      background_color: transparent
+      content_type: image_motiv
+      width: 460
+      height: 660
+      description: Motiv-Bereich rechts mit auslaufendem Kreis
+      style: flowing_circle
+  text_mapping:
+    logo:
+      target_zone: logo_area
+      position: center
+      coordinates: 140,80
+      max_length: 15
+      priority: 1
+      font_size: 20px
+      color: '{secondary_color}'
+      weight: regular
+    standort:
+      target_zone: standort_block
+      position: center
+      coordinates: 960,90
+      max_length: 20
+      priority: 2
+      font_size: 20px
+      color: '{background_color}'
+      weight: medium
+    headline:
+      target_zone: headline_block
+      position: top_left
+      coordinates: 40,160
+      max_length: 50
+      priority: 3
+      font_size: 36px
+      color: '{primary_color}'
+      weight: bold
+    subline:
+      target_zone: subline_block
+      position: top_left
+      coordinates: 40,280
+      max_length: 60
+      priority: 4
+      font_size: 24px
+      color: '{secondary_color}'
+      weight: normal
+    benefits:
+      target_zone: benefits_block
+      position: top_left
+      coordinates: 40,380
+      max_items: 5
+      max_length_per_item: 35
+      priority: 5
+      font_size: 20px
+      color: '{primary_color}'
+      weight: normal
+    cta:
+      target_zone: cta_block
+      position: center
+      coordinates: 190,670
+      max_length: 30
+      priority: 6
+      font_size: 24px
+      color: '{primary_color}'
+      weight: bold
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center
+      coordinates: 260,790
+      max_length: 50
+      priority: 7
+      font_size: 28px
+      color: '{background_color}'
+      weight: bold
+
+skizze12_centered_motiv_split_footer:
+  name: Centered Motiv Split Footer
+  description: Zentriertes Motiv mit geteiltem Footer
+  canvas_size: 1080x1080
+  layout_type: centered_layout
+  complexity: medium
+  zones:
+    logo_area:
+      position: 40-240px width, 40-120px height
+      background_color: '{secondary_color}'
+      content_type: logo
+      width: 200
+      height: 80
+      description: Logo-Bereich oben links
+    standort_block:
+      position: 880-1040px width, 60-120px height
+      background_color: '{accent_color}'
+      content_type: text_elements
+      width: 160
+      height: 60
+      description: Standort-Block oben rechts in Akzentfarbe
+      accent_elements:
+      - type: border_radius
+        radius: 6px
+    headline_block:
+      position: 260-820px width, 160-240px height
+      background_color: transparent
+      content_type: text_elements
+      width: 560
+      height: 80
+      description: Hauptüberschrift zentriert
+      font_size: 32px
+      font_weight: bold
+      color: '{primary_color}'
+    subline_block:
+      position: 260-820px width, 260-340px height
+      background_color: transparent
+      content_type: text_elements
+      width: 560
+      height: 80
+      description: Untertitel zentriert
+      font_size: 24px
+      font_weight: normal
+      color: '{secondary_color}'
+    motiv_area:
+      position: 160-920px width, 360-720px height
+      background_color: transparent
+      content_type: image_motiv
+      width: 760
+      height: 360
+      description: Motiv-Bereich zentriert
+    stellentitel_block:
+      position: 40-480px width, 800-900px height
+      background_color: '{primary_color}'
+      content_type: text_elements
+      width: 440
+      height: 100
+      description: Stellentitel unten links
+      font_size: 28px
+      font_weight: bold
+    cta_block:
+      position: 600-900px width, 800-900px height
+      background_color: '{accent_color}'
+      content_type: text_elements
+      width: 300
+      height: 100
+      description: Call-to-Action Button unten rechts
+      font_size: 24px
+      font_weight: bold
+  text_mapping:
+    logo:
+      target_zone: logo_area
+      position: center
+      coordinates: 140,80
+      max_length: 15
+      priority: 1
+      font_size: 20px
+      color: '{secondary_color}'
+      weight: regular
+    standort:
+      target_zone: standort_block
+      position: center
+      coordinates: 960,90
+      max_length: 20
+      priority: 2
+      font_size: 20px
+      color: '{background_color}'
+      weight: medium
+    headline:
+      target_zone: headline_block
+      position: center
+      coordinates: 540,200
+      max_length: 50
+      priority: 3
+      font_size: 32px
+      color: '{primary_color}'
+      weight: bold
+    subline:
+      target_zone: subline_block
+      position: center
+      coordinates: 540,300
+      max_length: 60
+      priority: 4
+      font_size: 24px
+      color: '{secondary_color}'
+      weight: normal
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center
+      coordinates: 260,850
+      max_length: 50
+      priority: 5
+      font_size: 28px
+      color: '{background_color}'
+      weight: bold
+    cta:
+      target_zone: cta_block
+      position: center
+      coordinates: 750,850
+      max_length: 30
+      priority: 6
+      font_size: 24px
+      color: '{primary_color}'
+      weight: bold
+
+skizze13_text_motiv_split_cta:
+  name: Text Motiv Split CTA
+  description: Zweispaltiger Text-Motiv-Split mit CTA
+  canvas_size: 1080x1080
+  layout_type: split_layout
+  complexity: medium
+  zones:
+    standort_block:
+      position: 40-240px width, 40-100px height
+      background_color: '{accent_color}'
+      content_type: text_elements
+      width: 200
+      height: 60
+      description: Standort-Block oben links mit Pin-Symbol
+      accent_elements:
+      - type: border_radius
+        radius: 6px
+      - type: pin_icon
+        color: '{background_color}'
+        size: 16px
+        position: left_center
+    logo_area:
+      position: 880-1040px width, 40-120px height
+      background_color: '{secondary_color}'
+      content_type: logo
+      width: 160
+      height: 80
+      description: Logo-Bereich oben rechts
+    headline_block:
+      position: 40-660px width, 120-200px height
+      background_color: transparent
+      content_type: text_elements
+      width: 620
+      height: 80
+      description: Hauptüberschrift links
+      font_size: 32px
+      font_weight: bold
+      color: '{primary_color}'
+    subline_block:
+      position: 40-660px width, 220-300px height
+      background_color: transparent
+      content_type: text_elements
+      width: 620
+      height: 80
+      description: Untertitel links
+      font_size: 24px
+      font_weight: normal
+      color: '{secondary_color}'
+    benefits_block:
+      position: 40-660px width, 320-480px height
+      background_color: transparent
+      content_type: text_elements
+      width: 620
+      height: 160
+      description: Benefits-Liste links
+      font_size: 20px
+      font_weight: normal
+      color: '{primary_color}'
+    stellentitel_block:
+      position: 40-460px width, 520-620px height
+      background_color: transparent
+      content_type: text_elements
+      width: 420
+      height: 100
+      description: Stellentitel links unten (transparent)
+      font_size: 28px
+      font_weight: bold
+    cta_block:
+      position: 480-780px width, 660-760px height
+      background_color: '{accent_color}'
+      content_type: text_elements
+      width: 300
+      height: 100
+      description: Call-to-Action Button in Akzentfarbe
+      font_size: 24px
+      font_weight: bold
+    motiv_area:
+      position: 680-1040px width, 120-920px height
+      background_color: transparent
+      content_type: image_motiv
+      width: 360
+      height: 800
+      description: Motiv-Bereich rechts
+  text_mapping:
+    standort:
+      target_zone: standort_block
+      position: center
+      coordinates: 140,70
+      max_length: 20
+      priority: 1
+      font_size: 20px
+      color: '{background_color}'
+      weight: medium
+      prefix: "📍 "
+    logo:
+      target_zone: logo_area
+      position: center
+      coordinates: 960,80
+      max_length: 15
+      priority: 2
+      font_size: 20px
+      color: '{secondary_color}'
+      weight: regular
+    headline:
+      target_zone: headline_block
+      position: top_left
+      coordinates: 40,120
+      max_length: 50
+      priority: 3
+      font_size: 32px
+      color: '{primary_color}'
+      weight: bold
+    subline:
+      target_zone: subline_block
+      position: top_left
+      coordinates: 40,220
+      max_length: 60
+      priority: 4
+      font_size: 24px
+      color: '{secondary_color}'
+      weight: normal
+    benefits:
+      target_zone: benefits_block
+      position: top_left
+      coordinates: 40,320
+      max_items: 5
+      max_length_per_item: 35
+      priority: 5
+      font_size: 20px
+      color: '{primary_color}'
+      weight: normal
+    stellentitel:
+      target_zone: stellentitel_block
+      position: center
+      coordinates: 250,570
+      max_length: 50
+      priority: 6
+      font_size: 28px
+      color: '{primary_color}'
+      weight: bold
+    cta:
+      target_zone: cta_block
+      position: center
+      coordinates: 630,710
+      max_length: 30
+      priority: 7
+      font_size: 24px
+      color: '{background_color}'
+      weight: bold

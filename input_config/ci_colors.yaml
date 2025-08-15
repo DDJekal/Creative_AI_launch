@@ -1,0 +1,67 @@
+# 🎨 ci_colors.yaml – Farbpaletten für Layoutzonen
+
+palettes:
+  - name: "Klinik Blau-Gelb"
+    primary: "#005EA5"       # dunkelblau (Benefits)
+    secondary: "#B4D9F7"     # hellblau (Fläche links)
+    accent: "#FFC20E"        # gelb (CTA)
+
+  - name: "Klinik Rot-Beige"
+    primary: "#D72638"
+    secondary: "#F5E8C7"
+    accent: "#F49D37"
+
+  - name: "Neutral Grau"
+    primary: "#444444"
+    secondary: "#AAAAAA"
+    accent: "#CCCC00"
+
+  - name: "Naturverbunden Grün-Koralle"
+    primary: "#2E7D32"       # Dunkelgrün
+    secondary: "#C8E6C9"     # Hellgrün
+    accent: "#FF7043"        # Koralle
+
+  - name: "Professionell Navy-Silber"
+    primary: "#1A237E"       # Navy
+    secondary: "#E8EAF6"     # Silber
+    accent: "#FF9800"        # Orange
+
+  - name: "Vertrauensvoll Teal-Orange"
+    primary: "#00695C"       # Teal
+    secondary: "#B2DFDB"     # Hellteal
+    accent: "#FF5722"        # Orange
+
+  - name: "Elegant Burgund-Creme"
+    primary: "#8E24AA"       # Burgund
+    secondary: "#F3E5F5"     # Creme
+    accent: "#FFC107"        # Gelb
+
+  - name: "Zeitlos Grau-Blau"
+    primary: "#424242"       # Grau
+    secondary: "#E3F2FD"     # Hellblau
+    accent: "#2196F3"        # Blau
+
+  - name: "Beruhigend Smaragd-Lavendel"
+    primary: "#388E3C"       # Smaragd
+    secondary: "#E1F5FE"     # Hellblau
+    accent: "#9C27B0"        # Lavendel
+
+  - name: "Dynamisch Schwarz-Rot"
+    primary: "#212121"       # Schwarz
+    secondary: "#FFEBEE"     # Hellrot
+    accent: "#F44336"        # Rot
+
+  - name: "Warm Beige-Terrakotta"
+    primary: "#8D6E63"       # Beige
+    secondary: "#EFEBE9"     # Hellbeige
+    accent: "#D84315"        # Terrakotta
+
+  - name: "Frisch Mint-Pfirsich"
+    primary: "#4DB6AC"       # Mint
+    secondary: "#E0F2F1"     # Hellmint
+    accent: "#FFAB91"        # Pfirsich
+
+fallback:
+  primary: "#000000"
+  secondary: "#DDDDDD"
+  accent: "#999999"

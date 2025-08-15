@@ -1,0 +1,89 @@
+# DALL-E PROMPT - Multi-Prompt-System
+# Layout: skizze10_modern_split
+# Timestamp: 20250815_165417
+# Length: 4511 characters
+# Compatible: No
+
+— CANVAS STRUCTURE: Modern Split —
+Canvas: 1080x1080px, Text links, Motiv rechts mit curved style
+**LAYOUT-ORIENTIERUNG: Links Textstack, rechts Motiv mit Kreis - rein verbale Orientierung**
+• Layout-Konturen: sanft abgerundete Ecken für ein freundliches, modernes Design
+• Container-Form: abgerundete, moderne Text-Container
+• Rahmen-Stil: weiche Schatten ohne sichtbare Rahmen
+• Ecken-Rundung: mittlere, ausgewogene Rundung (16px)
+• Akzent-Stil: moderne, minimalistische Akzente
+• Layout-Style: Abgerundet & Modern - sanft abgerundete Ecken für ein freundliches, modernes Design
+• Layout-Orientierung: Links Textstack, rechts Motiv mit Kreis
+• Textur-Stil: sanfte Farbverläufe und Übergänge
+• Hintergrund: subtile, dezente Muster
+• STANDORT_BLOCK (40-240px width, 40-120px height): text_elements in highlighted accent area
+  → Standort-Block oben links in Akzentfarbe
+• LOGO_AREA (880-1040px width, 40-120px height): logo in professional dark background
+  → Logo-Bereich oben rechts
+• HEADLINE_BLOCK (40-1040px width, 160-240px height): text_elements
+  → Hauptüberschrift
+• BENEFITS_BLOCK (40-1040px width, 260-400px height): text_elements
+  → Benefits-Liste
+• STELLENTITEL_BLOCK (40-460px width, 880-980px height): text_elements in professional light background
+  → Stellentitel unten links
+• CTA_BLOCK (80-440px width, 840-920px height): text_elements in highlighted accent area
+  → Call-to-Action Button
+• MOTIV_AREA (500-1040px width, 460-1000px height): image_motiv
+  → Motiv-Bereich rechts mit curved style
+
+— TEXT-LAYOUT-BEREICHE —
+**LAYOUT-ANWEISUNG: Alle definierten Bereiche müssen als sichtbare Farbflächen im Bild erscheinen**
+**KRITISCH: Text-BEREICHE als deutlich abgegrenzte Layout-Zonen - KEINE Unterbrechungen, KEINE überlappenden Texte**
+**Die folgenden Bereiche sollen als kompakte, zusammenhängende Flächen in den definierten Layout-Bereichen erscheinen:**
+• HEADLINE-BEREICH in headline_block: TEXT-ZONE
+  → Inhalt: ""Gestalte mit uns die Zukunft der Pflege""
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, zentriert
+  → Text wird direkt im Bild gerendert
+• STELLENTITEL-BEREICH in stellentitel_block: TEXT-ZONE
+  → Inhalt: "Pflegekraft (m/w/d)"
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, zentriert
+  → Text wird direkt im Bild gerendert
+• LOGO-BEREICH in logo_area: TEXT-ZONE
+  → Inhalt: "[FIRMENLOGO]"
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, zentriert
+  → Text wird direkt im Bild gerendert
+• Benefits-BEREICH in benefits_block: TEXT-ZONE
+  → Inhalt: 2 Bullet-Points, Text: Wertschätzung, nicht nur in Form..., flexible Arbeitszeiten
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, gleichmäßiger Abstand, gut lesbar
+  → Text wird direkt im Bild gerendert
+• CTA-BEREICH in cta_block: TEXT-ZONE
+  → Inhalt: "Heute melden, morgen a..."
+  → Stil: professionelle, gut lesbare Schrift, weiß auf #005EA5, zentriert
+  → Text wird direkt im Bild gerendert
+• STANDORT-BEREICH: TEXT-ZONE mit Pin-Symbol und Akzentfarbe #D84315
+  → Standort-Pin-Symbol (📍) als visuelles Element
+  → Akzentfarbe #D84315 für Standort-Bereich verwenden
+  → Text wird direkt im Bild gerendert
+• CTA-BUTTON: TEXT-ZONE in Akzentfarbe #D84315
+  → Professioneller Button-Stil mit abgerundeten Ecken
+  → Text wird direkt im Bild gerendert
+
+**TEXT-UMSETZUNG: Alle Texte werden direkt im Bild gerendert**
+
+— MOTIV BESCHREIBUNG —
+dedicated healthcare professionals working passionately in modern hospital ward, bustling nursing station, advanced medical equipment, warm natural lighting, professional healthcare environment, au...
+Beruf: Wir suchen eine engagierte Pflegekraf...
+Darstellung: Professionell
+Beleuchtung: Dramatisch
+Komposition: Medium Shot
+Stimmung: Beruhigend
+
+— QUALITÄTS-ANFORDERUNGEN —
+• Bildqualität: Hochauflösend, professionelle Fotografie
+• Authentizität: Echte Arbeitsplatz-Szenarien, natürliche Gesichtsausdrücke
+• Corporate Standard: Professionelle Kampagne-Qualität
+• Corporate Design: Hauptfarbe kräftiges Rot (#8D6E63), Sekundärfarbe helles Rot (#EFEBE9)
+• Akzentfarbe: helles Rot (#D84315) für CTA-Buttons, Highlights und wichtige Elemente
+• Farbharmonie: Professionelle Unternehmensfarben durchgängig in Layout und Design integriert
+
+— NEGATIVE PROMPTS (VERMEIDEN) —
+• KEINE unscharfen oder niedrigauflösenden Elemente
+• KEINE generischen Stock-Foto Erscheinung
+• KEINE verzerrten Gesichter oder unnatürliche Proportionen
+• Alle Texte werden direkt im Bild gerendert
+• Professionelle, gut lesbare Schrift verwenden

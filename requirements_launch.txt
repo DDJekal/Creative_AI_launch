@@ -1,0 +1,90 @@
+# CreativeAI 6.0 - Launch Requirements
+# Minimale Dependencies für reibungslosen Start der Streamlit-App
+
+# ========================
+# CORE STREAMLIT
+# ========================
+# Streamlit für die Web-App (KRITISCH)
+streamlit>=1.47.1,<2.0.0
+
+# ========================
+# DATA HANDLING
+# ========================
+# YAML für Konfigurationsdateien (KRITISCH)
+PyYAML>=6.0.2,<7.0.0
+
+# ========================
+# IMAGE PROCESSING
+# ========================
+# PIL/Pillow für Bildverarbeitung (KRITISCH)
+Pillow>=10.4.0,<12.0.0
+
+# ========================
+# PDF PROCESSING
+# ========================
+# PyPDF2 für PDF-Upload-Funktionalität (KRITISCH)
+PyPDF2>=3.0.0,<4.0.0
+
+# ========================
+# ENVIRONMENT & UTILITIES
+# ========================
+# Environment-Variablen (WICHTIG)
+python-dotenv>=1.0.1,<2.0.0
+
+# HTTP Requests für API-Calls (WICHTIG)
+requests>=2.32.0,<3.0.0
+
+# ========================
+# DATA VALIDATION
+# ========================
+# Pydantic für Datenstrukturen (WICHTIG)
+pydantic>=2.8.0,<3.0.0
+
+# Type hints (WICHTIG)
+typing-extensions>=4.12.0,<5.0.0
+
+# ========================
+# AI INTEGRATION (ERFORDERLICH)
+# ========================
+# OpenAI API (ERFORDERLICH - für volle Funktionalität)
+openai>=1.97.1,<2.0.0
+
+# LangGraph (ERFORDERLICH - für Workflows)
+langgraph>=0.6.0,<1.0.0
+langchain-core>=0.3.0,<1.0.0
+langchain-openai>=0.3.0,<1.0.0
+
+# ========================
+# INSTALLATIONSHINWEISE
+# ========================
+# 
+# 1. MINIMALE INSTALLATION (App startet):
+#    pip install -r requirements_launch.txt
+#
+# 2. VOLLE FUNKTIONALITÄT (AI-Features):
+#    pip install -r requirements_consolidated.txt
+#
+# 3. NUR STREAMLIT TESTEN:
+#    pip install streamlit>=1.47.1
+#
+# ========================
+# FEHLERBEHEBUNG
+# ========================
+#
+# Falls Pillow Probleme macht:
+# pip uninstall PIL
+# pip install Pillow
+#
+# Falls PyPDF2 Probleme macht:
+# pip install PyPDF2==3.0.0
+#
+# Falls Streamlit nicht startet:
+# pip install streamlit==1.47.1
+#
+# ========================
+# SYSTEMANFORDERUNGEN
+# ========================
+# Python: 3.9+
+# RAM: 2GB+
+# Speicher: 100MB+
+# Internet: Für Streamlit Community Cloud

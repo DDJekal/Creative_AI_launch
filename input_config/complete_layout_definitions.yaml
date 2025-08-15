@@ -1,0 +1,263 @@
+# COMPLETE LAYOUT DEFINITIONS - Alle 9 Skizzen
+# Version: 7.1 mit CI-Farben-Integration
+# Verwendet von: Dual-Prompt-System + Enhanced API
+
+# 🎨 HINWEIS: {primary_color}, {secondary_color}, {accent_color}, {text_color} 
+# werden durch User-gewählte CI-Farben ersetzt
+
+skizze1_vertical_split:
+  name: "Vertikale Teilung"
+  description: "Klassische 50/50 Aufteilung - Text links, Motiv rechts"
+  canvas_size: "1080x1080"
+  layout_type: "two_column_vertical_split"
+  
+  zones:
+    left_zone:
+      position: "0-540px width, full height"
+      background_color: "{secondary_color}"
+      content_type: "text_elements"
+      width: 540
+      description: "Text-Bereich mit Headlines, Benefits, CTA"
+    right_zone:
+      position: "540-1080px width, full height"
+      background_color: "transparent"
+      content_type: "image_motiv"
+      width: 540
+      description: "Motiv-Bereich für fotografischen Inhalt"
+  
+  color_scheme: "Header: {primary_color}, Content: {secondary_color}, CTA: {accent_color}"
+  structure_command: "Vertikale Teilung bei 540px mit klaren Zonen-Grenzen"
+  text_rendering: "Professionelle Typografie, gut lesbare Inhalte"
+
+skizze2_horizontal:
+  name: "Horizontale Teilung"
+  description: "Oben/Unten Layout - Header oben, Content unten"
+  canvas_size: "1080x1080"
+  layout_type: "two_row_horizontal_split"
+  
+  zones:
+    top_zone:
+      position: "full width, 0-540px height"
+      background_color: "{primary_color}"
+      content_type: "header_branding"
+      height: 540
+      description: "Header-Bereich mit Branding und Headlines"
+    bottom_zone:
+      position: "full width, 540-1080px height"
+      background_color: "{secondary_color}"
+      content_type: "content_motiv"
+      height: 540
+      description: "Content-Bereich mit Motiv und Benefits"
+  
+  color_scheme: "Header: {primary_color}, Content: {secondary_color}, CTA: {accent_color}"
+  structure_command: "Horizontale Teilung bei 540px mit Header-Fokus"
+  text_rendering: "Hierarchische Typografie, klare Struktur"
+
+skizze3_grid:
+  name: "3x3 Grid"
+  description: "9-Felder Grid für strukturierten Content"
+  canvas_size: "1080x1080"
+  layout_type: "three_by_three_grid"
+  
+  zones:
+    grid_1: { position: "0-360px x 0-360px", background_color: "{primary_color}", content_type: "header" }
+    grid_2: { position: "360-720px x 0-360px", background_color: "{secondary_color}", content_type: "title" }
+    grid_3: { position: "720-1080px x 0-360px", background_color: "{accent_color}", content_type: "cta" }
+    grid_4: { position: "0-360px x 360-720px", background_color: "{secondary_color}", content_type: "benefit_1" }
+    grid_5: { position: "360-720px x 360-720px", background_color: "transparent", content_type: "main_motiv" }
+    grid_6: { position: "720-1080px x 360-720px", background_color: "{secondary_color}", content_type: "benefit_2" }
+    grid_7: { position: "0-360px x 720-1080px", background_color: "{accent_color}", content_type: "company" }
+    grid_8: { position: "360-720px x 720-1080px", background_color: "{secondary_color}", content_type: "benefit_3" }
+    grid_9: { position: "720-1080px x 720-1080px", background_color: "{primary_color}", content_type: "contact" }
+  
+  color_scheme: "Alternierende Farben: {primary_color}, {secondary_color}, {accent_color}"
+  structure_command: "3x3 Grid mit 360x360px Feldern, strukturierte Content-Verteilung"
+  text_rendering: "Grid-optimierte Typografie, ausgewogene Text-Verteilung"
+
+skizze4_hero:
+  name: "Hero Layout"
+  description: "Großer Hero-Bereich mit Motiv und überlagerten Text-Elementen"
+  canvas_size: "1080x1080"
+  layout_type: "hero_overlay"
+  
+  zones:
+    hero_background:
+      position: "full canvas"
+      background_color: "transparent"
+      content_type: "full_motiv"
+      description: "Vollflächiges Hintergrund-Motiv"
+    overlay_top:
+      position: "full width, 0-300px height"
+      background_color: "{primary_color}80"  # 50% Transparenz
+      content_type: "headline_overlay"
+      description: "Semi-transparenter Header mit Headline"
+    overlay_bottom:
+      position: "full width, 780-1080px height"
+      background_color: "{secondary_color}CC"  # 80% Transparenz
+      content_type: "benefits_cta_overlay"
+      description: "Semi-transparenter Footer mit Benefits und CTA"
+  
+  color_scheme: "Overlay: {primary_color}, Background-Overlay: {secondary_color}, CTA: {accent_color}"
+  structure_command: "Hero-Layout mit überlagerten Text-Elementen"
+  text_rendering: "Kontrastreiche Overlay-Typografie, gut lesbar auf Motiv"
+
+skizze5_sidebar:
+  name: "Sidebar Layout"
+  description: "Schmale Sidebar links, großer Content-Bereich rechts"
+  canvas_size: "1080x1080"
+  layout_type: "sidebar_main"
+  
+  zones:
+    sidebar:
+      position: "0-300px width, full height"
+      background_color: "{primary_color}"
+      content_type: "branding_nav"
+      width: 300
+      description: "Schmale Sidebar mit Branding"
+    main_content:
+      position: "300-1080px width, full height"
+      background_color: "{secondary_color}"
+      content_type: "motiv_content"
+      width: 780
+      description: "Großer Hauptbereich mit Motiv und Content"
+  
+  color_scheme: "Sidebar: {primary_color}, Main: {secondary_color}, Accents: {accent_color}"
+  structure_command: "Sidebar-Layout mit 300px Sidebar und Hauptbereich"
+  text_rendering: "Kompakte Sidebar-Typografie, großzügiger Hauptbereich"
+
+skizze6_card:
+  name: "Card Layout"
+  description: "Zentrierte Card mit Motiv und Content"
+  canvas_size: "1080x1080"
+  layout_type: "centered_card"
+  
+  zones:
+    background:
+      position: "full canvas"
+      background_color: "{secondary_color}"
+      content_type: "background"
+      description: "Vollflächiger Hintergrund"
+    card:
+      position: "140-940px width, 140-940px height"
+      background_color: "#FFFFFF"
+      content_type: "card_content"
+      width: 800
+      height: 800
+      description: "Zentrierte Card mit Schatten-Effekt"
+    card_header:
+      position: "140-940px width, 140-400px height"
+      background_color: "{primary_color}"
+      content_type: "card_header"
+      description: "Card-Header mit Branding"
+    card_body:
+      position: "140-940px width, 400-800px height"
+      background_color: "#FFFFFF"
+      content_type: "motiv_benefits"
+      description: "Card-Body mit Motiv und Benefits"
+    card_footer:
+      position: "140-940px width, 800-940px height"
+      background_color: "{accent_color}"
+      content_type: "card_cta"
+      description: "Card-Footer mit CTA"
+  
+  color_scheme: "Card-Header: {primary_color}, Card-Body: #FFFFFF, Card-Footer: {accent_color}"
+  structure_command: "Zentrierte Card mit Header/Body/Footer Struktur"
+  text_rendering: "Card-basierte Typografie, klare Abschnitte"
+
+skizze7_split_diagonal:
+  name: "Diagonale Teilung"
+  description: "Diagonale Aufteilung für dynamisches Layout"
+  canvas_size: "1080x1080"
+  layout_type: "diagonal_split"
+  
+  zones:
+    upper_left:
+      position: "diagonal from top-left to bottom-right"
+      background_color: "{primary_color}"
+      content_type: "text_content"
+      description: "Oberer linker Bereich (diagonal) mit Text-Content"
+    lower_right:
+      position: "diagonal from center to bottom-right"
+      background_color: "transparent"
+      content_type: "motiv_area"
+      description: "Unterer rechter Bereich (diagonal) mit Motiv"
+  
+  color_scheme: "Text-Bereich: {primary_color}, Motiv-Bereich: transparent, Accents: {accent_color}"
+  structure_command: "Diagonale Teilung für dynamische Komposition"
+  text_rendering: "Dynamische Typografie, angepasst an diagonale Form"
+
+skizze8_banner:
+  name: "Banner Layout"
+  description: "Horizontale Banner mit Motiv-Integration"
+  canvas_size: "1080x1080"
+  layout_type: "banner_stack"
+  
+  zones:
+    top_banner:
+      position: "full width, 0-200px height"
+      background_color: "{primary_color}"
+      content_type: "header_banner"
+      height: 200
+      description: "Oberer Banner mit Headline"
+    middle_section:
+      position: "full width, 200-800px height"
+      background_color: "transparent"
+      content_type: "main_motiv"
+      height: 600
+      description: "Großer Motiv-Bereich"
+    bottom_banner:
+      position: "full width, 800-1080px height"
+      background_color: "{secondary_color}"
+      content_type: "benefits_banner"
+      height: 280
+      description: "Unterer Banner mit Benefits und CTA"
+  
+  color_scheme: "Top-Banner: {primary_color}, Bottom-Banner: {secondary_color}, CTA: {accent_color}"
+  structure_command: "Banner-Stack Layout mit zentralem Motiv-Bereich"
+  text_rendering: "Banner-optimierte Typografie, kompakt und wirkungsvoll"
+
+skizze9_magazine:
+  name: "Magazin Layout"
+  description: "Magazin-Style mit mehreren Content-Bereichen"
+  canvas_size: "1080x1080"
+  layout_type: "magazine_layout"
+  
+  zones:
+    header:
+      position: "full width, 0-150px height"
+      background_color: "{primary_color}"
+      content_type: "magazine_header"
+      height: 150
+      description: "Magazin-Header mit Branding"
+    main_article:
+      position: "0-720px width, 150-600px height"
+      background_color: "#FFFFFF"
+      content_type: "main_content"
+      width: 720
+      height: 450
+      description: "Hauptartikel-Bereich mit Motiv"
+    sidebar_right:
+      position: "720-1080px width, 150-600px height"
+      background_color: "{secondary_color}"
+      content_type: "sidebar_content"
+      width: 360
+      height: 450
+      description: "Rechte Sidebar mit Benefits"
+    footer_left:
+      position: "0-540px width, 600-1080px height"
+      background_color: "{secondary_color}"
+      content_type: "additional_info"
+      width: 540
+      height: 480
+      description: "Linker Footer-Bereich"
+    footer_right:
+      position: "540-1080px width, 600-1080px height"
+      background_color: "{accent_color}"
+      content_type: "cta_area"
+      width: 540
+      height: 480
+      description: "Rechter Footer-Bereich mit CTA"
+  
+  color_scheme: "Header: {primary_color}, Content: #FFFFFF, Sidebar: {secondary_color}, CTA: {accent_color}"
+  structure_command: "Magazin-Layout mit Header, Haupt-Content, Sidebar und Footer"
+  text_rendering: "Magazin-Typografie, Editorial-Style, klare Hierarchie" 

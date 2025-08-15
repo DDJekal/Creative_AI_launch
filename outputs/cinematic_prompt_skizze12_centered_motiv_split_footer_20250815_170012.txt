@@ -1,0 +1,48 @@
+# CINEMATIC PROMPT - OpenAI API Optimiert
+# Layout: skizze12_centered_motiv_split_footer
+# Timestamp: 20250815_170012
+# Length: 4195 characters
+# Transformation Type: cinematic
+
+## VISUELLES MOTIV
+moving encounter between caring healthcare professional and thankful patient, tender hand holding, heartfelt conversation, warm lighting design, artistic shallow depth of field, emotionally powerfu... Ein echter, authentischer Mensch mit natürlichen Gesichtszügen, realistische Hauttextur und natürliche Gesichtsausdrücke, professionelle, aber warme Ausstrahlung, authentische Arbeitskleidung und natürliche Körperhaltung, KEIN Stock-Foto oder generische Darstellung, echte, ungeschönte Gesichtszüge wie von einem echten Foto, natürliche Falten und Hautdetails, 🚨 WICHTIG: Echte, authentische Person, kein generisches Stock-Foto, 🚨 WICHTIG: Natürliche, ungeschönte Darstellung wie ein echtes Foto, 🚨 WICHTIG: Verwende echte, ungeschönte Gesichtszüge mit natürlichen Details, 🚨 WICHTIG: Keine perfekten, glatten Gesichter wie aus der Werbung WICHTIG: Alle Texte und Beschreibungen müssen auf Deutsch sein! Kontext: Die Person arbeitet als Wir suchen eine engagierte Pflegekraf... Technische Details: Darstellung: Professionell, Beleuchtung: Dramatisch, Komposition: Medium Shot, Stimmung: Beruhigend
+
+## LAYOUT
+Das Creative verwendet ein professionelles Layout mit ausgewogene Komposition in moderne Gestaltung Gestaltung 🚨 WICHTIG: Das Layout muss exakt wie beschrieben umgesetzt werden! mit einem prominenten Headline-Bereich, einem unterstützenden Subline-Bereich, dem Stellentitel-Bereich, einem Call-to-Action Button in professioneller Farbe, einem prominenten Standort-Banner mit Pin-Symbol in professioneller Farbe.
+
+## STIL
+Das Corporate Design verwendet professioneller Farbe als Hauptfarbe mit kräftigem Rot als unterstützende Farbe und professioneller Farbe für Akzente und Call-to-Actions Das Design ist professionell und modern gestaltet mit klaren visuellen Hierarchien und guter Lesbarkeit.
+
+## QUALITÄT
+Das Bild soll in höchster Fotografie-Qualität sein mit 8K-Auflösung und professioneller Beleuchtung. Es soll echte, authentische Menschen mit natürlichen Gesichtsausdrücken und realistischer Hauttextur zeigen. Die Darstellung soll fotorealistisch sein mit natürlichen Schatten, realistischen Materialien und professioneller Komposition. Das Creative soll Corporate-Standard-Qualität haben und für professionelle Recruiting-Kampagnen geeignet sein. Verwende natürliche Beleuchtung, realistische Farben und authentische Arbeitsumgebungen. Alle Texte müssen auf Deutsch sein und korrekt geschrieben werden. Verwende echte, ungeschönte Gesichtszüge statt perfekter Stock-Foto Darstellungen.
+
+## NICHT ERWÜNSCHT
+Vermeide unscharfe oder niedrigauflösende Elemente keine generischen Stock-Foto Erscheinung keine verzerrten Gesichter oder unnatürliche Proportionen keine künstlich wirkenden oder generischen Gesichter keine übermäßig bearbeiteten oder unnatürlichen Hauttexturen keine cartoonartigen oder stilisierten Darstellungen keine übermäßig gestellten oder unnatürlichen Posen keine englischen Texte oder Begriffe keine perfekten, glatten Gesichter wie aus der Werbung keine generischen Business-Porträts keine übermäßig gestylten oder bearbeiteten Darstellungen alle Layout-Bereiche müssen als sichtbare Farbflächen erscheinen.
+
+## VOLLSTÄNDIGER PROMPT
+Ein professionelles Recruiting-Creative für Social Media in höchster Fotografie-Qualität mit folgender Gestaltung:
+
+🚨 WICHTIG: Alle Texte und Beschreibungen MÜSSEN auf Deutsch sein!
+🚨 WICHTIG: Keine englischen Begriffe verwenden!
+🚨 WICHTIG: Alle Headlines, Benefits und CTAs müssen auf Deutsch sein!
+🚨 WICHTIG: Verwende NUR deutsche Sprache, keine englischen Texte!
+🚨 WICHTIG: Alle Schriftzüge und Beschriftungen müssen auf Deutsch sein!
+🚨 WICHTIG: DALL-E soll deutsche Texte korrekt rendern, keine englischen Wörter!
+
+VISUELLES MOTIV: moving encounter between caring healthcare professional and thankful patient, tender hand holding, heartfelt conversation, warm lighting design, artistic shallow depth of field, emotionally powerfu... Ein echter, authentischer Mensch mit natürlichen Gesichtszügen, realistische Hauttextur und natürliche Gesichtsausdrücke, professionelle, aber warme Ausstrahlung, authentische Arbeitskleidung und natürliche Körperhaltung, KEIN Stock-Foto oder generische Darstellung, echte, ungeschönte Gesichtszüge wie von einem echten Foto, natürliche Falten und Hautdetails, 🚨 WICHTIG: Echte, authentische Person, kein generisches Stock-Foto, 🚨 WICHTIG: Natürliche, ungeschönte Darstellung wie ein echtes Foto, 🚨 WICHTIG: Verwende echte, ungeschönte Gesichtszüge mit natürlichen Details, 🚨 WICHTIG: Keine perfekten, glatten Gesichter wie aus der Werbung WICHTIG: Alle Texte und Beschreibungen müssen auf Deutsch sein! Kontext: Die Person arbeitet als Wir suchen eine engagierte Pflegekraf... Technische Details: Darstellung: Professionell, Beleuchtung: Dramatisch, Komposition: Medium Shot, Stimmung: Beruhigend
+
+LAYOUT: Das Creative verwendet ein professionelles Layout mit ausgewogene Komposition in moderne Gestaltung Gestaltung 🚨 WICHTIG: Das Layout muss exakt wie beschrieben umgesetzt werden! mit einem prominenten Headline-Bereich, einem unterstützenden Subline-Bereich, dem Stellentitel-Bereich, einem Call-to-Action Button in professioneller Farbe, einem prominenten Standort-Banner mit Pin-Symbol in professioneller Farbe.
+
+STIL: Das Corporate Design verwendet professioneller Farbe als Hauptfarbe mit kräftigem Rot als unterstützende Farbe und professioneller Farbe für Akzente und Call-to-Actions Das Design ist professionell und modern gestaltet mit klaren visuellen Hierarchien und guter Lesbarkeit.
+
+QUALITÄT: Das Bild soll in höchster Fotografie-Qualität sein mit 8K-Auflösung und professioneller Beleuchtung. Es soll echte, authentische Menschen mit natürlichen Gesichtsausdrücken und realistischer Hauttextur zeigen. Die Darstellung soll fotorealistisch sein mit natürlichen Schatten, realistischen Materialien und professioneller Komposition. Das Creative soll Corporate-Standard-Qualität haben und für professionelle Recruiting-Kampagnen geeignet sein. Verwende natürliche Beleuchtung, realistische Farben und authentische Arbeitsumgebungen. Alle Texte müssen auf Deutsch sein und korrekt geschrieben werden. Verwende echte, ungeschönte Gesichtszüge statt perfekter Stock-Foto Darstellungen.
+
+NICHT ERWÜNSCHT: Vermeide unscharfe oder niedrigauflösende Elemente keine generischen Stock-Foto Erscheinung keine verzerrten Gesichter oder unnatürliche Proportionen keine künstlich wirkenden oder generischen Gesichter keine übermäßig bearbeiteten oder unnatürlichen Hauttexturen keine cartoonartigen oder stilisierten Darstellungen keine übermäßig gestellten oder unnatürlichen Posen keine englischen Texte oder Begriffe keine perfekten, glatten Gesichter wie aus der Werbung keine generischen Business-Porträts keine übermäßig gestylten oder bearbeiteten Darstellungen alle Layout-Bereiche müssen als sichtbare Farbflächen erscheinen.
+
+STYLE: fotorealistisch, professionelle Fotografie, natürliche Beleuchtung, authentische Darstellung
+
+SPRACHE: Alle Texte und Beschreibungen MÜSSEN auf Deutsch sein, keine englischen Begriffe verwenden!
+SPRACHE: Headlines, Benefits und Call-to-Actions MÜSSEN auf Deutsch sein!
+SPRACHE: Verwende ausschließlich deutsche Sprache für alle Textelemente!
+SPRACHE: DALL-E soll deutsche Wörter korrekt schreiben, keine englischen Texte rendern!
+SPRACHE: Verwende deutsche Umlaute (ä, ö, ü) und korrekte deutsche Rechtschreibung!

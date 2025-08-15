@@ -1,0 +1,37 @@
+{
+  "timestamp": "20250815_165417",
+  "layout_id": "skizze10_modern_split",
+  "layout_name": "Modern Split",
+  "processing_stages": {
+    "input_processed": true,
+    "layout_integrated": true,
+    "prompts_finalized": true
+  },
+  "text_placements_count": 6,
+  "adaptive_adjustments_count": 0,
+  "layout_metrics": {
+    "layout_complexity": "medium",
+    "zones_count": 7,
+    "text_elements_count": 2,
+    "benefits_count": 2,
+    "total_content_length": 138,
+    "ci_colors_count": 5,
+    "layout_efficiency": "complex"
+  },
+  "prompts": {
+    "midjourney": {
+      "length": 2278,
+      "preview": "dedicated healthcare professionals working passionately in modern hospital ward, bustling nursing st..."
+    },
+    "dalle": {
+      "length": 4511,
+      "compatible": false,
+      "preview": "— CANVAS STRUCTURE: Modern Split —\nCanvas: 1080x1080px, Text links, Motiv rechts mit curved style\n**..."
+    },
+    "cinematic": {
+      "length": 4180,
+      "transformation_type": "cinematic",
+      "preview": "Ein professionelles Recruiting-Creative für Social Media in höchster Fotografie-Qualität mit folgend..."
+    }
+  }
+}

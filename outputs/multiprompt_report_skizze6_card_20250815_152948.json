@@ -1,0 +1,37 @@
+{
+  "timestamp": "20250815_152948",
+  "layout_id": "skizze6_card",
+  "layout_name": "Vertikales Stack-Layout",
+  "processing_stages": {
+    "input_processed": true,
+    "layout_integrated": true,
+    "prompts_finalized": true
+  },
+  "text_placements_count": 5,
+  "adaptive_adjustments_count": 1,
+  "layout_metrics": {
+    "layout_complexity": "medium",
+    "zones_count": 7,
+    "text_elements_count": 2,
+    "benefits_count": 3,
+    "total_content_length": 157,
+    "ci_colors_count": 5,
+    "layout_efficiency": "complex"
+  },
+  "prompts": {
+    "midjourney": {
+      "length": 2321,
+      "preview": "📎 use attached reference image as visual inspiration, professional marketing style adaptation, addit..."
+    },
+    "dalle": {
+      "length": 4797,
+      "compatible": false,
+      "preview": "— CANVAS STRUCTURE: Vertikales Stack-Layout —\nCanvas: 1080x1080px, Motiv zentriert, Textzonen darunt..."
+    },
+    "cinematic": {
+      "length": 4169,
+      "transformation_type": "cinematic",
+      "preview": "Ein professionelles Recruiting-Creative für Social Media in höchster Fotografie-Qualität mit folgend..."
+    }
+  }
+}
